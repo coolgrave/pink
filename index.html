@@ -2,16 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: pink</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-
+    <title>Главная - Pink</title>
+<!--    <link rel="stylesheet" href="css/style.css"> -->
   </head>
+  
   <body>
 
+<!--ШАПКА===============================================-->
     <header>
       <div class="container">
+        
+<!--~~~~Шапка: Блок навигации~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <nav class="main-navigation">
           
+<!--      Название сайта и кнопка показа моб. меню-->
           <div class="top-menu clearfix">
             <a class="top-menu-title" href="index.html">
               <h1>
@@ -23,6 +27,7 @@
             </a>
           </div>
           
+<!--      Мобильное меню-->
           <ul class="mobile-menu">
             <li>
               <a href="#information">
@@ -47,16 +52,29 @@
           </ul>
           
         </nav>  
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  
+        
+        
+<!--~~~~Шапка: Заголовок страницы~~~~~~~~~~~~~~~~~~~~~~~-->
         <div class="page-title">
           <h2>
             Взгляните на жизнь иначе!
           </h2>
+          <div class="page-title-image"></div>
         </div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         
       </div>
     </header>
+<!--====================================================-->
+
     
+    
+
+
+<!--ОСНОВНОЙ РАЗДЕЛ=====================================-->
+<!--~~~~Раздел закачки приложения~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="download">
       <div class="container">
         
@@ -86,9 +104,15 @@
         
       </div>
     </section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     
+    
+    
+<!--~~~~Раздел преимуществ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="features">
       <div class="container">
+        
+<!--    Заголовок раздела преимуществ-->
         <div class="features-title">
           <h2>
             Устали от серости мегаполиса?
@@ -98,8 +122,10 @@
           </h2>
         </div>
         
+<!--    Разделитель: косой фон-->
         <div class="slope"></div>
       
+<!--    Преимущество 1-->
         <div class="features-item">
           <h3>
             Поднимает настроение
@@ -109,6 +135,7 @@
           </p>
         </div>
 
+<!--    Преимущество 2-->
         <div class="features-item">
           <h3>
             Меняет мир вокруг
@@ -118,6 +145,7 @@
           </p>
         </div>
 
+<!--    Преимущество 3-->
         <div class="features-item">
           <h3>
             Заводит новых друзей
@@ -127,24 +155,33 @@
           </p>
         </div>
         
+<!--    Декоративное изображение-->
         <div class="features-picture"></div>
       </div>
     </section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     
+
+
+<!--~~~~Раздел отзывов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="reviews">
-      
       <div class="container">
+        
+<!--  Невидимые радиопереключатели слайдера-->
         <input type="radio" name="reviews-toggle" id="reviews-toggle-1" checked>
         <input type="radio" name="reviews-toggle" id="reviews-toggle-2">
         <input type="radio" name="reviews-toggle" id="reviews-toggle-3">
         
+<!--    Отзыв 1-->
         <div class="reviews-item reviews-item-1">
-          <h3>
-            Николай Петров
-          </h3>
-          <p>
-            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </p>
+          <div class="reviews-caption">
+            <h3>
+              Николай Петров
+            </h3>
+            <p>
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </div>
           <div class="reviews-toggle">
             <label for="reviews-toggle-1"></label>
             <label for="reviews-toggle-2"></label>
@@ -152,13 +189,16 @@
           </div>
         </div>
         
+<!--    Отзыв 2-->
         <div class="reviews-item reviews-item-2">
-          <h3>
-            Николай Петров
-          </h3>
-          <p>
-            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </p>
+          <div class="reviews-caption">
+            <h3>
+              Николай Иванов
+            </h3>
+            <p>
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!»
+            </p>
+          </div>
           <div class="reviews-toggle">
             <label for="reviews-toggle-1"></label>
             <label for="reviews-toggle-2"></label>
@@ -166,13 +206,16 @@
           </div>
         </div>
         
+<!--    Отзыв 3-->
         <div class="reviews-item reviews-item-3">
-          <h3>
-            Николай Петров
-          </h3>
-          <p>
-            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </p>
+          <div class="reviews-caption">
+            <h3>
+              Николай Сидоров
+            </h3>
+            <p>
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </div>
           <div class="reviews-toggle">
             <label for="reviews-toggle-1"></label>
             <label for="reviews-toggle-2"></label>
@@ -180,107 +223,98 @@
           </div>
         </div>
         
+<!--    Разделитель: косой фон-->
         <div class="slope"></div>
+        
       </div>
-      
     </section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     
-    <section class="pricing">
+    
+    
+<!--~~~~Раздел тарифов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <section class="rates">
       <div class="container">
-        <input type="radio" name="pricing-toggle" id="pricing-toggle-1" checked>
-        <input type="radio" name="pricing-toggle" id="pricing-toggle-2">
-        <input type="radio" name="pricing-toggle" id="pricing-toggle-3">
         
-        <div class="pricing-item pricing-item-2">
-          <h3>
-            Начальный
-          </h3>
-          <p>
-            0,00 USD
-          </p>
-          <div class="flag"></div>
-          <ul>
-            <li>
+<!--    Невидимые радиопереключатели слайдера-->
+        <input type="radio" name="rates-toggle" id="rates-toggle-1">
+        <input type="radio" name="rates-toggle" id="rates-toggle-2" checked>
+        <input type="radio" name="rates-toggle" id="rates-toggle-3">
+        
+        <table class="rates-table">
+          <tr>
+            <th>
+              <p class="rates-title">Начальный</p>
+              <p class="rates-price">0,00 USD</p>
+            </th>
+            <th>
+              <p class="rates-title">Стандарт</p>
+              <p class="rates-price">3,99 USD</p>
+              <span class="rates-hit">
+                Хит
+              </span>
+            </th>
+            <th>
+              <p class="rates-title">Премиум</p>
+              <p class="rates-price">5,99 USD</p>
+            </th>
+          </tr>
+          <tr>
+            <td>
               Розовый фильтр
-              <span class="check"></span>
-            </li>
-            <li>
-              Смайлики
-              <span class="cross"></span>
-            </li>
-            <li>
-              Комментарии
-              <span class="cross"></span>
-            </li>
-          </ul>
-          <div class="pricing-toggle">
-            <label for="pricing-toggle-1"></label>
-            <label for="pricing-toggle-2"></label>
-            <label for="pricing-toggle-3"></label>
-          </div>
-        </div>
-        
-        <div class="pricing-item pricing-item-1">
-          <h3>
-            Стандарт
-          </h3>
-          <p>
-            3,99 USD
-          </p>
-          <div class="flag"></div>
-          <ul>
-            <li>
+              <span class="check">да</span>
+            </td>
+            <td>
               Розовый фильтр
-              <span class="check"></span>
-            </li>
-            <li>
-              Смайлики
-              <span class="check"></span>
-            </li>
-            <li>
-              Комментарии
-              <span class="cross"></span>
-            </li>
-          </ul>
-          <div class="pricing-toggle">
-            <label for="pricing-toggle-1"></label>
-            <label for="pricing-toggle-2"></label>
-            <label for="pricing-toggle-3"></label>
-          </div>
-        </div>
-        
-        <div class="pricing-item pricing-item-1">
-          <h3>
-            Премиум
-          </h3>
-          <p>
-            5,99 USD
-          </p>
-          <div class="flag"></div>
-          <ul>
-            <li>
+              <span class="check">да</span>
+            </td>
+            <td>
               Розовый фильтр
-              <span class="check"></span>
-            </li>
-            <li>
+              <span class="check">да</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
               Смайлики
-              <span class="check"></span>
-            </li>
-            <li>
+              <span class="cross">нет</span>
+            </td>
+            <td>
+              Смайлики
+              <span class="check">да</span>
+            </td>
+            <td>
+              Смайлики
+              <span class="check">да</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
               Комментарии
-              <span class="check"></span>
-            </li>
-          </ul>
-          <div class="pricing-toggle">
-            <label for="pricing-toggle-1"></label>
-            <label for="pricing-toggle-2"></label>
-            <label for="pricing-toggle-3"></label>
-          </div>
-        </div>
+              <span class="cross">нет</span>
+            </td>
+            <td>
+              Комментарии
+              <span class="cross">нет</span>
+            </td>
+            <td>
+              Комментарии
+              <span class="check">да</span>
+            </td>
+          </tr>
+        </table>
         
+        <div class="rates-toggle">
+          <label for="rates-toggle-1"></label>
+          <label for="rates-toggle-2"></label>
+          <label for="rates-toggle-3"></label>
+        </div>
       </div>
     </section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     
+    
+    
+<!--~~~~Раздел контактов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="contacts">
       <div class="container">
         <h2>
@@ -290,7 +324,7 @@
           Звоните:
         </h3>
         <p>
-          +7 (812) 555-66-66
+          +7&nbsp;(812)&nbsp;555-66-66
         </p>
         <h3>
           Пишите:
@@ -302,17 +336,25 @@
           Приезжайте в гости:
         </h3>
         <p>
-          ул. Большая Конюшенная, 19/8
+          ул. Большая Конюшенная,&nbsp;19/8
         </p>
       </div>
     </section>
+<!--====================================================-->
     
+    
+    
+    
+    
+<!--ПОДВАЛ==============================================-->
     <footer>
       <div class="container">
         <div class="footer-map"></div>
       </div>
     </footer>
-
+<!--====================================================-->
+    
+    
     <!-- <script src="js/script.js"></script> -->
 
   </body>
