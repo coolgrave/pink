@@ -2,12 +2,328 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: pink</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>Главная - Pink</title>
+    <link rel="stylesheet" href="css/style.css"> 
   </head>
+  
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн-курсе «<a href="https://htmlacademy.ru/advanced_intensive">Продвинутый HTML и CSS</a>».</p>
+<!--ШАПКА===============================================-->
+    <header>
+      <div class="container">
+        
+<!--~~~~Шапка: Блок навигации~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <nav class="main-navigation">
+          
+<!--      Название сайта и кнопка показа моб. меню-->
+          <div class="top-menu clearfix">
+            <a class="top-logo" href="index.html">
+                Pink
+            </a>
+            <a class="top-menu-icon" href="#menu">
+              <span>Меню</span>
+            </a>
+          </div>
+          
+<!--      Мобильное меню-->
+          <ul class="mobile-menu">
+            <li>
+              <a href="#information">
+                Информация
+              </a>
+            </li>
+            <li>
+              <a href="#blog">
+                Блог
+              </a>
+            </li>
+            <li>
+              <a href="#reviews">
+                Отзывы
+              </a>
+            </li>
+            <li>
+              <a href="#contest">
+                Конкурс
+              </a>
+            </li>
+          </ul>
+          
+        </nav>
+      </div>
+    </header>
+<!--====================================================-->
+  
+    
+        
+<!--ОСНОВНОЙ РАЗДЕЛ=====================================-->
+<!--~~~~Шапка: Заголовок страницы~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div class="page-title">
+      <div class="container">
+        <h1>
+          Взгляните на жизнь иначе!
+        </h1>
+        <div class="page-title-image"></div>
+      </div>
+    </div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+    
+    
+<!--~~~~Раздел закачки приложения~~~~~~~~~~~~~~~~~~~~~~~-->  
+    <section class="download">
+      <div class="container">
+        
+        <a class="download-btn" href="#download">
+            Скачать приложение
+        </a>
+        
+        <div class="download-os">
+          <a class="download-icon icon-apple" href="#apple">
+            Apple
+          </a>
+          <a class="download-icon icon-android" href="#android">
+            Android
+          </a>
+          <a class="download-icon icon-ms" href="#ms">
+            Microsoft
+          </a>
+        </div>
+        
+        <div class="download-caption">
+          <p>
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+        
+      </div>
+    </section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    
+    
+    
+<!--~~~~Раздел преимуществ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <section class="features">
+      <div class="container">
+        
+<!--    Заголовок раздела преимуществ-->
+        <div class="features-title">
+          <h2>
+            Устали от серости мегаполиса?
+          </h2>
+          <h2>
+            Нам есть, что вам предложить!
+          </h2>
+        </div>
+        
+<!--    Разделитель: косой фон-->
+        <div class="slope"></div>
+      
+<!--    Преимущество 1-->
+        <div class="features-item">
+          <h3>
+            Поднимает настроение
+          </h3>
+          <p>
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+          </p>
+        </div>
+
+<!--    Преимущество 2-->
+        <div class="features-item">
+          <h3>
+            Меняет мир вокруг
+          </h3>
+          <p>
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          </p>
+        </div>
+
+<!--    Преимущество 3-->
+        <div class="features-item">
+          <h3>
+            Заводит новых друзей
+          </h3>
+          <p>
+            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </div>
+        
+<!--    Декоративное изображение-->
+        <div class="features-picture"></div>
+      </div>
+    </section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    
+
+
+<!--~~~~Раздел отзывов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <section class="reviews">
+      <div class="container">
+        
+<!--  Невидимые радиопереключатели слайдера-->
+        <input type="radio" name="reviews-toggle" id="review1" checked>
+        <input type="radio" name="reviews-toggle" id="review2">
+        <input type="radio" name="reviews-toggle" id="review3">
+        
+        <div class="reviews-container">
+<!--    Отзыв 1-->
+          <article class="reviews-item reviews-item-1">
+            <h3>
+              Николай Петров
+            </h3>
+            <p>
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </article>
+
+  <!--    Отзыв 2-->
+          <article class="reviews-item reviews-item-2">
+            <h3>
+              Николай Иванов
+            </h3>
+            <p>
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!»
+            </p>
+          </article>
+
+  <!--    Отзыв 3-->
+          <article class="reviews-item reviews-item-3">
+            <h3>
+              Николай Сидоров
+            </h3>
+            <p>
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </p>
+          </article>
+        </div>
+        
+        <div class="reviews-toggle">
+          <label for="review1"></label>
+          <label for="review2"></label>
+          <label for="review3"></label>
+        </div>
+        
+<!--    Разделитель: косой фон-->
+        <div class="slope"></div>
+        
+      </div>
+    </section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    
+    
+    
+<!--~~~~Раздел тарифов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <section class="rates">
+      <div class="container">
+        
+<!--    Невидимые радиопереключатели слайдера-->
+        <input type="radio" name="rates-toggle" id="rate1">
+        <input type="radio" name="rates-toggle" id="rate2" checked>
+        <input type="radio" name="rates-toggle" id="rate3">
+        
+        <table class="rates-table">
+          <tr>
+            <th>
+              <p class="rates-title">Начальный</p>
+              <p class="rates-price">0,00 USD</p>
+            </th>
+            <th>
+              <p class="rates-title">Стандарт</p>
+              <p class="rates-price">3,99 USD</p>
+              <span class="rates-hit">
+                Хит
+              </span>
+            </th>
+            <th>
+              <p class="rates-title">Премиум</p>
+              <p class="rates-price">5,99 USD</p>
+            </th>
+          </tr>
+          <tr>
+            <td>
+              Розовый фильтр
+              <span class="check">да</span>
+            </td>
+            <td>
+              Розовый фильтр
+              <span class="check">да</span>
+            </td>
+            <td>
+              Розовый фильтр
+              <span class="check">да</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Смайлики
+              <span class="cross">нет</span>
+            </td>
+            <td>
+              Смайлики
+              <span class="check">да</span>
+            </td>
+            <td>
+              Смайлики
+              <span class="check">да</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Комментарии
+              <span class="cross">нет</span>
+            </td>
+            <td>
+              Комментарии
+              <span class="cross">нет</span>
+            </td>
+            <td>
+              Комментарии
+              <span class="check">да</span>
+            </td>
+          </tr>
+        </table>
+        
+        <div class="rates-toggle">
+          <label for="rate1"></label>
+          <label for="rate2"></label>
+          <label for="rate3"></label>
+        </div>
+      </div>
+    </section>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    
+    
+    
+<!--~~~~Раздел контактов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <section class="contacts">
+      <div class="container">
+        <h2>
+          Остались вопросы? Свяжитесь с нами!
+        </h2>
+        <h3>
+          Звоните:
+        </h3>
+        <p>
+          +7&nbsp;(812)&nbsp;555-66-66
+        </p>
+        <h3>
+          Пишите:
+        </h3>
+        <p>
+          mail@htmlacademy.ru
+        </p>
+        <h3>
+          Приезжайте в гости:
+        </h3>
+        <p>
+          ул. Большая Конюшенная,&nbsp;19/8
+        </p>
+        <div class="bottom-map"></div>
+      </div>
+    </section>
+<!--====================================================-->
 
     <!-- <script src="js/script.js"></script> -->
 
