@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Главная - Pink</title>
-<!--    <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css"> 
   </head>
   
   <body>
@@ -17,10 +17,8 @@
           
 <!--      Название сайта и кнопка показа моб. меню-->
           <div class="top-menu clearfix">
-            <a class="top-menu-title" href="index.html">
-              <h1>
+            <a class="top-logo" href="index.html">
                 Pink
-              </h1>
             </a>
             <a class="top-menu-icon" href="#menu">
               <span>Меню</span>
@@ -51,37 +49,34 @@
             </li>
           </ul>
           
-        </nav>  
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  
-        
-        
-<!--~~~~Шапка: Заголовок страницы~~~~~~~~~~~~~~~~~~~~~~~-->
-        <div class="page-title">
-          <h2>
-            Взгляните на жизнь иначе!
-          </h2>
-          <div class="page-title-image"></div>
-        </div>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        
+        </nav>
       </div>
     </header>
 <!--====================================================-->
-
+  
     
-    
-
-
+        
 <!--ОСНОВНОЙ РАЗДЕЛ=====================================-->
-<!--~~~~Раздел закачки приложения~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~Шапка: Заголовок страницы~~~~~~~~~~~~~~~~~~~~~~~-->
+    <div class="page-title">
+      <div class="container">
+        <h1>
+          Взгляните на жизнь иначе!
+        </h1>
+        <div class="page-title-image"></div>
+      </div>
+    </div>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+    
+    
+<!--~~~~Раздел закачки приложения~~~~~~~~~~~~~~~~~~~~~~~-->  
     <section class="download">
       <div class="container">
         
         <a class="download-btn" href="#download">
-          <h3>
             Скачать приложение
-          </h3>
         </a>
         
         <div class="download-os">
@@ -168,59 +163,46 @@
       <div class="container">
         
 <!--  Невидимые радиопереключатели слайдера-->
-        <input type="radio" name="reviews-toggle" id="reviews-toggle-1" checked>
-        <input type="radio" name="reviews-toggle" id="reviews-toggle-2">
-        <input type="radio" name="reviews-toggle" id="reviews-toggle-3">
+        <input type="radio" name="reviews-toggle" id="review1" checked>
+        <input type="radio" name="reviews-toggle" id="review2">
+        <input type="radio" name="reviews-toggle" id="review3">
         
+        <div class="reviews-container">
 <!--    Отзыв 1-->
-        <div class="reviews-item reviews-item-1">
-          <div class="reviews-caption">
+          <article class="reviews-item reviews-item-1">
             <h3>
               Николай Петров
             </h3>
             <p>
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
-          </div>
-          <div class="reviews-toggle">
-            <label for="reviews-toggle-1"></label>
-            <label for="reviews-toggle-2"></label>
-            <label for="reviews-toggle-3"></label>
-          </div>
-        </div>
-        
-<!--    Отзыв 2-->
-        <div class="reviews-item reviews-item-2">
-          <div class="reviews-caption">
+          </article>
+
+  <!--    Отзыв 2-->
+          <article class="reviews-item reviews-item-2">
             <h3>
               Николай Иванов
             </h3>
             <p>
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!»
             </p>
-          </div>
-          <div class="reviews-toggle">
-            <label for="reviews-toggle-1"></label>
-            <label for="reviews-toggle-2"></label>
-            <label for="reviews-toggle-3"></label>
-          </div>
-        </div>
-        
-<!--    Отзыв 3-->
-        <div class="reviews-item reviews-item-3">
-          <div class="reviews-caption">
+          </article>
+
+  <!--    Отзыв 3-->
+          <article class="reviews-item reviews-item-3">
             <h3>
               Николай Сидоров
             </h3>
             <p>
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
-          </div>
-          <div class="reviews-toggle">
-            <label for="reviews-toggle-1"></label>
-            <label for="reviews-toggle-2"></label>
-            <label for="reviews-toggle-3"></label>
-          </div>
+          </article>
+        </div>
+        
+        <div class="reviews-toggle">
+          <label for="review1"></label>
+          <label for="review2"></label>
+          <label for="review3"></label>
         </div>
         
 <!--    Разделитель: косой фон-->
@@ -237,9 +219,9 @@
       <div class="container">
         
 <!--    Невидимые радиопереключатели слайдера-->
-        <input type="radio" name="rates-toggle" id="rates-toggle-1">
-        <input type="radio" name="rates-toggle" id="rates-toggle-2" checked>
-        <input type="radio" name="rates-toggle" id="rates-toggle-3">
+        <input type="radio" name="rates-toggle" id="rate1">
+        <input type="radio" name="rates-toggle" id="rate2" checked>
+        <input type="radio" name="rates-toggle" id="rate3">
         
         <table class="rates-table">
           <tr>
@@ -304,9 +286,9 @@
         </table>
         
         <div class="rates-toggle">
-          <label for="rates-toggle-1"></label>
-          <label for="rates-toggle-2"></label>
-          <label for="rates-toggle-3"></label>
+          <label for="rate1"></label>
+          <label for="rate2"></label>
+          <label for="rate3"></label>
         </div>
       </div>
     </section>
@@ -338,23 +320,11 @@
         <p>
           ул. Большая Конюшенная,&nbsp;19/8
         </p>
+        <div class="bottom-map"></div>
       </div>
     </section>
 <!--====================================================-->
-    
-    
-    
-    
-    
-<!--ПОДВАЛ==============================================-->
-    <footer>
-      <div class="container">
-        <div class="footer-map"></div>
-      </div>
-    </footer>
-<!--====================================================-->
-    
-    
+
     <!-- <script src="js/script.js"></script> -->
 
   </body>
