@@ -9,47 +9,62 @@
   <body>
 
 <!--ШАПКА===============================================-->
-    <header>
-      <div class="container">
+    <header class="page-header">
+      <div class="page-header__inner">
         
 <!--~~~~Шапка: Блок навигации~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <nav class="main-navigation">
+<!--    Название сайта и кнопка показа моб. меню-->
+        <div class="page-header__logo-wrap">
+          <a class="page-header__logo-link" href="/">
+            Pink
+          </a>
+        </div>
+        
+        <a class="page-header__nav-open" href="#menu">
+          <span>
+            Меню
+          </span>
+        </a>
+
+<!--    Главное меню-->
+        <nav class="main-nav  main-nav--hide">
           
-<!--      Название сайта и кнопка показа моб. меню-->
-          <div class="top-menu clearfix">
-            <a class="top-logo" href="index.html">
-                Pink
-            </a>
-            <a class="top-menu-icon" href="#menu">
-              <span>Меню</span>
+          <a class="main-nav__icon-close" href="#menu">
+            <span>
+              Закрыть
+            </span>
+          </a>
+          
+          <div class="main-nav__logo-wrap">
+            <a class="main-nav__logo-link" href="/">
+              Pink
             </a>
           </div>
           
-<!--      Мобильное меню-->
-          <ul class="mobile-menu">
-            <li>
-              <a href="#information">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
                 Информация
               </a>
             </li>
-            <li>
-              <a href="#blog">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="blog.html">
                 Блог
               </a>
             </li>
-            <li>
-              <a href="#reviews">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
                 Отзывы
               </a>
             </li>
-            <li>
-              <a href="#contest">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">
                 Конкурс
               </a>
             </li>
           </ul>
-          
         </nav>
+          
       </div>
     </header>
 <!--====================================================-->
@@ -57,45 +72,33 @@
     
         
 <!--ОСНОВНОЙ РАЗДЕЛ=====================================-->
-<!--~~~~Шапка: Заголовок страницы~~~~~~~~~~~~~~~~~~~~~~~-->
-    <div class="page-title">
-      <div class="container">
-        <h1>
+<!--~~~~Раздел закачки приложения~~~~~~~~~~~~~~~~~~~~~~~-->
+    <section class="app">
+      <div class="app__inner">
+        
+        <h1 class="app__title">
           Взгляните на жизнь иначе!
-        </h1>
-        <div class="page-title-image"></div>
-      </div>
-    </div>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        </h1>   
 
-
-    
-    
-<!--~~~~Раздел закачки приложения~~~~~~~~~~~~~~~~~~~~~~~-->  
-    <section class="download">
-      <div class="container">
-        
         <a class="download-btn" href="#download">
-            Скачать приложение
+          Скачать приложение
         </a>
-        
-        <div class="download-os">
-          <a class="download-icon icon-apple" href="#apple">
+
+        <div class="download-links">
+          <a class="download-links__icon  download-links__icon--apple" href="#apple">
             Apple
           </a>
-          <a class="download-icon icon-android" href="#android">
+          <a class="download-links__icon  download-links__icon--android" href="#android">
             Android
           </a>
-          <a class="download-icon icon-ms" href="#ms">
+          <a class="download-links__icon  download-links__icon--microsoft" href="#ms">
             Microsoft
           </a>
         </div>
-        
-        <div class="download-caption">
-          <p>
+
+        <p class="app__caption">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
-        </div>
+        </p>
         
       </div>
     </section>
@@ -105,10 +108,10 @@
     
 <!--~~~~Раздел преимуществ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="features">
-      <div class="container">
+      <div class="features__inner">
         
 <!--    Заголовок раздела преимуществ-->
-        <div class="features-title">
+        <div class="features__main-title">
           <h2>
             Устали от серости мегаполиса?
           </h2>
@@ -121,37 +124,37 @@
         <div class="slope"></div>
       
 <!--    Преимущество 1-->
-        <div class="features-item">
-          <h3>
+        <div class="features__item">
+          <h2 class="features__item-title">
             Поднимает настроение
-          </h3>
-          <p>
+          </h2>
+          <p class="features__item-caption">
             Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
           </p>
         </div>
 
 <!--    Преимущество 2-->
-        <div class="features-item">
-          <h3>
+        <div class="features__item">
+          <h2 class="features__item-title">
             Меняет мир вокруг
-          </h3>
-          <p>
+          </h2>
+          <p class="features__item-caption">
             Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
           </p>
         </div>
 
 <!--    Преимущество 3-->
-        <div class="features-item">
-          <h3>
+        <div class="features__item">
+          <h2 class="features__item-title">
             Заводит новых друзей
-          </h3>
-          <p>
+          </h2>
+          <p class="features__item-caption">
             Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
           </p>
         </div>
         
 <!--    Декоративное изображение-->
-        <div class="features-picture"></div>
+        <div class="features__picture"></div>
       </div>
     </section>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -160,46 +163,49 @@
 
 <!--~~~~Раздел отзывов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="reviews">
-      <div class="container">
+      <div class="reviews__inner">
+        <h2 class="reviews__title">
+          Отзывы
+        </h2>
         
 <!--  Невидимые радиопереключатели слайдера-->
-        <input type="radio" name="reviews-toggle" id="review1" checked>
-        <input type="radio" name="reviews-toggle" id="review2">
-        <input type="radio" name="reviews-toggle" id="review3">
+        <input type="radio" class="reviews__radio-button" name="reviews-toggle" id="review1" checked>
+        <input type="radio" class="reviews__radio-button" name="reviews-toggle" id="review2">
+        <input type="radio" class="reviews__radio-button" name="reviews-toggle" id="review3">
         
-        <div class="reviews-container">
+        <div class="reviews__wrapper">
 <!--    Отзыв 1-->
-          <article class="reviews-item reviews-item-1">
-            <h3>
+          <article class="reviews-item  reviews-item--slide1">
+            <h2 class=reviews-item__title>
               Николай Петров
-            </h3>
-            <p>
+            </h2>
+            <p class="reviews-item__caption">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
           </article>
 
   <!--    Отзыв 2-->
-          <article class="reviews-item reviews-item-2">
-            <h3>
+          <article class="reviews-item  reviews-item--slide2">
+            <h2 class=reviews-item__title>
               Николай Иванов
-            </h3>
-            <p>
+            </h2>
+            <p class="reviews-item__caption">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!»
             </p>
           </article>
 
   <!--    Отзыв 3-->
-          <article class="reviews-item reviews-item-3">
-            <h3>
+          <article class="reviews-item  reviews-item--slide3">
+            <h2 class=reviews-item__title>
               Николай Сидоров
-            </h3>
-            <p>
+            </h2>
+            <p class="reviews-item__caption">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
           </article>
         </div>
         
-        <div class="reviews-toggle">
+        <div class="reviews__toggle">
           <label for="review1"></label>
           <label for="review2"></label>
           <label for="review3"></label>
@@ -216,76 +222,76 @@
     
 <!--~~~~Раздел тарифов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="rates">
-      <div class="container">
+      <div class="rates__inner">
+        <h2 class="rates__title">
+          Цены
+        </h2>
         
 <!--    Невидимые радиопереключатели слайдера-->
-        <input type="radio" name="rates-toggle" id="rate1">
-        <input type="radio" name="rates-toggle" id="rate2" checked>
-        <input type="radio" name="rates-toggle" id="rate3">
+        <input type="radio" class="rates__radio-button" name="rates-toggle" id="rate1">
+        <input type="radio" class="rates__radio-button" name="rates-toggle" id="rate2" checked>
+        <input type="radio" class="rates__radio-button" name="rates-toggle" id="rate3">
         
         <table class="rates-table">
-          <tr>
-            <th>
-              <p class="rates-title">Начальный</p>
-              <p class="rates-price">0,00 USD</p>
+          <tr class="rates-table__rows">
+            <th class="rates-table__headings">
+              <p class="rates-table__title">Начальный</p>
+              <p class="rates-table__price">0,00 USD</p>
             </th>
-            <th>
-              <p class="rates-title">Стандарт</p>
-              <p class="rates-price">3,99 USD</p>
-              <span class="rates-hit">
-                Хит
-              </span>
+            <th class="rates-table__headings rates-table__headings--hit">
+              <p class="rates-table__title">Стандарт</p>
+              <p class="rates-table__price">3,99 USD</p>
             </th>
-            <th>
-              <p class="rates-title">Премиум</p>
-              <p class="rates-price">5,99 USD</p>
+            <th class="rates-table__headings">
+              <p class="rates-table__title">Премиум</p>
+              <p class="rates-table__price">5,99 USD</p>
             </th>
           </tr>
-          <tr>
-            <td>
+          <tr class="rates-table__rows">
+            <td class="rates-table__data">
               Розовый фильтр
               <span class="check">да</span>
             </td>
-            <td>
+            <td class="rates-table__data">
               Розовый фильтр
               <span class="check">да</span>
             </td>
-            <td>
+            <td class="rates-table__data">
               Розовый фильтр
               <span class="check">да</span>
             </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="rates-table__rows">
+            <td class="rates-table__data">
               Смайлики
               <span class="cross">нет</span>
             </td>
-            <td>
+            <td class="rates-table__data">
               Смайлики
               <span class="check">да</span>
             </td>
-            <td>
+            <td class="rates-table__data">
               Смайлики
               <span class="check">да</span>
             </td>
           </tr>
-          <tr>
-            <td>
+          <tr class="rates-table__rows">
+            <td class="rates-table__data">
               Комментарии
               <span class="cross">нет</span>
             </td>
-            <td>
+            <td class="rates-table__data">
               Комментарии
               <span class="cross">нет</span>
             </td>
-            <td>
+            <td class="rates-table__data">
               Комментарии
               <span class="check">да</span>
             </td>
           </tr>
         </table>
         
-        <div class="rates-toggle">
+        <div class="rates__toggle">
           <label for="rate1"></label>
           <label for="rate2"></label>
           <label for="rate3"></label>
@@ -298,29 +304,29 @@
     
 <!--~~~~Раздел контактов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="contacts">
-      <div class="container">
-        <h2>
+      <div class="contacts__inner">
+        <h1 class="contacts__main-title">
           Остались вопросы? Свяжитесь с нами!
-        </h2>
-        <h3>
+        </h1>
+        <h2 class="contacts__second-title">
           Звоните:
-        </h3>
-        <p>
+        </h2>
+        <p class="contacts__caption">
           +7&nbsp;(812)&nbsp;555-66-66
         </p>
-        <h3>
+        <h2 class="contacts__second-title">
           Пишите:
-        </h3>
-        <p>
+        </h2>
+        <p class="contacts__caption">
           mail@htmlacademy.ru
         </p>
-        <h3>
+        <h2 class="contacts__second-title">
           Приезжайте в гости:
-        </h3>
-        <p>
+        </h2>
+        <p class="contacts__caption">
           ул. Большая Конюшенная,&nbsp;19/8
         </p>
-        <div class="bottom-map"></div>
+        <div class="contacts__bottom-map"></div>
       </div>
     </section>
 <!--====================================================-->
