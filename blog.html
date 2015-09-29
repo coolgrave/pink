@@ -10,24 +10,10 @@
 
 <!--ШАПКА===============================================-->
     <header class="page-header">
-      <div class="page-header__inner">
-        
-<!--~~~~Шапка: Блок навигации~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--    Название сайта и кнопка показа моб. меню-->
-        <div class="page-header__logo-wrap">
-          <a class="page-header__logo-link" href="/">
-            Pink
-          </a>
-        </div>
-        
-        <a class="page-header__nav-open" href="#menu">
-          <span>
-            Меню
-          </span>
-        </a>
+      <div class="wrap">
 
 <!--    Главное меню-->
-        <nav class="main-nav  main-nav--hide">
+        <nav class="main-nav  main-nav--open">
           
           <a class="main-nav__icon-close" href="#menu">
             <span>
@@ -41,7 +27,7 @@
             </a>
           </div>
           
-          <ul class="main-nav__list">
+          <ul class="main-nav__list  main-nav__list--show">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">
                 Информация
@@ -76,10 +62,12 @@
 <!--ОСНОВНОЙ РАЗДЕЛ=====================================-->
 <!--~~~~Заголовок страницы блога~~~~~~~~~~~~~~~~~~~~~~~~-->
     <div class="blog-head">
-      <div class="blog-head__inner">
-        <h1 class="blog-head__title">
-          Блог путешественников, пользователей Пинк
-        </h1>
+      <div class="wrap">
+        <div class="page-title">
+          <h1 class="slim-title">
+            Блог путешественников, пользователей Пинк
+          </h1>
+        </div>
       </div>
     </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -88,58 +76,66 @@
     
 <!--~~~~Превью постов блога~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <article class="blog-preview">
-      <a class="blog-preview__inner" href="post.html">
-        <h2 class="blog-preview__title">
-          Антон и Надя в Тайланде
-        </h2>
-        <p class="blog-preview__date">
-          Опубликовано: 6 месяцев назад
-        </p>
-        <p class="blog-preview__caption">
-          Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь максимально избегать избитых туристических мест и районов.
-        </p>
-      </a>
-    </article>
-    
-    <article class="blog-preview">
-      <div class="blog-preview__inner">
-        <h2 class="blog-preview__title">
-          Гастрольный тур «Кубанских борщеваров»
-        </h2>
-        <p class="blog-preview__date">
-          Опубликовано: 5 лет назад
-        </p>
-        <p class="blog-preview__caption">
-          Возрождение культурных традиций уже не за горами. Фолк-металл-рэп-группа из столицы Кубани провела весь год в гастролях по России и ближнему (а также среднему) зарубежью.
-        </p>
+      <div class="wrap">
+        <a class="blog-preview__inner" href="post.html">
+          <h3 class="fat-title  fat-title--line-27  fat-title--left">
+            Антон и Надя в Тайланде
+          </h3>
+          <p class="blog-preview__date">
+            Опубликовано: 6 месяцев назад
+          </p>
+          <p class="blog-preview__caption">
+            Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь максимально избегать избитых туристических мест и районов.
+          </p>
+        </a>
       </div>
     </article>
     
     <article class="blog-preview">
-      <div class="blog-preview__inner">
-        <h2 class="blog-preview__title">
-          Чета Болонских в Париже
-        </h2>
-        <p class="blog-preview__date">
-          Опубликовано: 100 лет назад
-        </p>
-        <p class="blog-preview__caption">
-          Невероятные приключения русских во Франции. Интриги, предательства, погони и, разумеется, убийства. Читайте криминально-исторический трактат в двух томах.
-        </p>
+      <div class="wrap">
+        <a class="blog-preview__inner" href="#">
+          <h3 class="fat-title  fat-title--line-27  fat-title--left">
+            Гастрольный тур «Кубанских борщеваров»
+          </h3>
+          <p class="blog-preview__date">
+            Опубликовано: 5 лет назад
+          </p>
+          <p class="blog-preview__caption">
+            Возрождение культурных традиций уже не за горами. Фолк-металл-рэп-группа из столицы Кубани провела весь год в гастролях по России и ближнему (а также среднему) зарубежью.
+          </p>
+        </a>
       </div>
     </article>
     
     <article class="blog-preview">
-      <div class="blog-preview__inner">
-        <h2 class="blog-preview__title">
-          Путешествие на яхте сеньора Христофора
-        </h2>
-        <p class="blog-preview__date">
-          Опубликовано: 523 года назад
-        </p>
-        <p class="blog-preview__caption">
-          Группа испанцев отдыхала на яхте, но они даже не представляли, какие открытия ждут их впереди и чем это обернется для всего человечества!
-        </p>
+      <div class="wrap">
+        <a class="blog-preview__inner" href="#">
+          <h3 class="fat-title  fat-title--line-27  fat-title--left">
+            Чета Болонских в Париже
+          </h3>
+          <p class="blog-preview__date">
+            Опубликовано: 100 лет назад
+          </p>
+          <p class="blog-preview__caption">
+            Невероятные приключения русских во Франции. Интриги, предательства, погони и, разумеется, убийства. Читайте криминально-исторический трактат в двух томах.
+          </p>
+        </a>
+      </div>
+    </article>
+    
+    <article class="blog-preview">
+      <div class="wrap">
+        <a class="blog-preview__inner" href="#">
+          <h3 class="fat-title  fat-title--line-27  fat-title--left">
+            Путешествие на яхте сеньора Христофора
+          </h3>
+          <p class="blog-preview__date">
+            Опубликовано: 523 года назад
+          </p>
+          <p class="blog-preview__caption">
+            Группа испанцев отдыхала на яхте, но они даже не представляли, какие открытия ждут их впереди и чем это обернется для всего человечества!
+          </p>
+        </a>
       </div>
     </article>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -148,7 +144,7 @@
 
 <!--~~~~Пагинация~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <div class="paginator">
-      <div class="paginator__inner">
+      <div class="wrap">
         <a class="paginator__btn paginator__btn--active">1</a>
         <a class="paginator__btn" href="#">2</a>
         <a class="paginator__btn" href="#">3</a>
@@ -163,7 +159,7 @@
     
 <!--ПОДВАЛ==============================================-->
     <footer class="main-footer">
-      <div class="main-footer__inner">
+      <div class="wrap">
         <div class="main-footer__logo-wrap">
           <a class="main-footer__logo-link" href="index.html">Pink</a>
         </div>

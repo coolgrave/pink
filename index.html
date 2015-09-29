@@ -10,24 +10,10 @@
 
 <!--ШАПКА===============================================-->
     <header class="page-header">
-      <div class="page-header__inner">
-        
-<!--~~~~Шапка: Блок навигации~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--    Название сайта и кнопка показа моб. меню-->
-        <div class="page-header__logo-wrap">
-          <a class="page-header__logo-link" href="/">
-            Pink
-          </a>
-        </div>
-        
-        <a class="page-header__nav-open" href="#menu">
-          <span>
-            Меню
-          </span>
-        </a>
+      <div class="wrap">
 
 <!--    Главное меню-->
-        <nav class="main-nav  main-nav--hide">
+        <nav class="main-nav  main-nav--open">
           
           <a class="main-nav__icon-close" href="#menu">
             <span>
@@ -41,7 +27,7 @@
             </a>
           </div>
           
-          <ul class="main-nav__list">
+          <ul class="main-nav__list  main-nav__list--show">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">
                 Информация
@@ -74,11 +60,13 @@
 <!--ОСНОВНОЙ РАЗДЕЛ=====================================-->
 <!--~~~~Раздел закачки приложения~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="app">
-      <div class="app__inner">
+      <div class="wrap">
         
-        <h1 class="app__title">
-          Взгляните на жизнь иначе!
-        </h1>   
+        <div class="page-title">
+          <h1 class="slim-title">
+            Взгляните на жизнь иначе!
+          </h1>
+        </div>
 
         <a class="download-btn" href="#download">
           Скачать приложение
@@ -108,14 +96,14 @@
     
 <!--~~~~Раздел преимуществ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="features">
-      <div class="features__inner">
+      <div class="wrap">
         
 <!--    Заголовок раздела преимуществ-->
-        <div class="features__main-title">
-          <h2>
+        <div class="features__title">
+          <h2 class="slim-title  slim-title--gray">
             Устали от серости мегаполиса?
           </h2>
-          <h2>
+          <h2 class="slim-title  slim-title--gray">
             Нам есть, что вам предложить!
           </h2>
         </div>
@@ -125,9 +113,9 @@
       
 <!--    Преимущество 1-->
         <div class="features__item">
-          <h2 class="features__item-title">
+          <h3 class="fat-title  fat-title--black">
             Поднимает настроение
-          </h2>
+          </h3>
           <p class="features__item-caption">
             Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
           </p>
@@ -135,9 +123,9 @@
 
 <!--    Преимущество 2-->
         <div class="features__item">
-          <h2 class="features__item-title">
+          <h3 class="fat-title  fat-title--black">
             Меняет мир вокруг
-          </h2>
+          </h3>
           <p class="features__item-caption">
             Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
           </p>
@@ -145,9 +133,9 @@
 
 <!--    Преимущество 3-->
         <div class="features__item">
-          <h2 class="features__item-title">
+          <h3 class="fat-title  fat-title--black">
             Заводит новых друзей
-          </h2>
+          </h3>
           <p class="features__item-caption">
             Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
           </p>
@@ -163,8 +151,8 @@
 
 <!--~~~~Раздел отзывов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="reviews">
-      <div class="reviews__inner">
-        <h2 class="reviews__title">
+      <div class="wrap">
+        <h2 class="null-title">
           Отзывы
         </h2>
         
@@ -176,9 +164,9 @@
         <div class="reviews__wrapper">
 <!--    Отзыв 1-->
           <article class="reviews-item  reviews-item--slide1">
-            <h2 class=reviews-item__title>
+            <h3 class="fat-title  fat-title--black  fat-title--line-30">
               Николай Петров
-            </h2>
+            </h3>
             <p class="reviews-item__caption">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
@@ -186,9 +174,9 @@
 
   <!--    Отзыв 2-->
           <article class="reviews-item  reviews-item--slide2">
-            <h2 class=reviews-item__title>
+            <h3 class="fat-title  fat-title--black  fat-title--line-30">
               Николай Иванов
-            </h2>
+            </h3>
             <p class="reviews-item__caption">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!»
             </p>
@@ -196,9 +184,9 @@
 
   <!--    Отзыв 3-->
           <article class="reviews-item  reviews-item--slide3">
-            <h2 class=reviews-item__title>
+            <h3 class="fat-title  fat-title--black  fat-title--line-30">
               Николай Сидоров
-            </h2>
+            </h3>
             <p class="reviews-item__caption">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </p>
@@ -222,79 +210,80 @@
     
 <!--~~~~Раздел тарифов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="rates">
-      <div class="rates__inner">
-        <h2 class="rates__title">
+      <div class="wrap">
+        <h2 class="null-title">
           Цены
         </h2>
-        
-<!--    Невидимые радиопереключатели слайдера-->
-        <input type="radio" class="rates__radio-button" name="rates-toggle" id="rate1">
-        <input type="radio" class="rates__radio-button" name="rates-toggle" id="rate2" checked>
-        <input type="radio" class="rates__radio-button" name="rates-toggle" id="rate3">
-        
-        <table class="rates-table">
-          <tr class="rates-table__rows">
-            <th class="rates-table__headings">
-              <p class="rates-table__title">Начальный</p>
-              <p class="rates-table__price">0,00 USD</p>
-            </th>
-            <th class="rates-table__headings rates-table__headings--hit">
-              <p class="rates-table__title">Стандарт</p>
-              <p class="rates-table__price">3,99 USD</p>
-            </th>
-            <th class="rates-table__headings">
-              <p class="rates-table__title">Премиум</p>
-              <p class="rates-table__price">5,99 USD</p>
-            </th>
-          </tr>
-          <tr class="rates-table__rows">
-            <td class="rates-table__data">
-              Розовый фильтр
-              <span class="check">да</span>
-            </td>
-            <td class="rates-table__data">
-              Розовый фильтр
-              <span class="check">да</span>
-            </td>
-            <td class="rates-table__data">
-              Розовый фильтр
-              <span class="check">да</span>
-            </td>
-          </tr>
-          <tr class="rates-table__rows">
-            <td class="rates-table__data">
-              Смайлики
-              <span class="cross">нет</span>
-            </td>
-            <td class="rates-table__data">
-              Смайлики
-              <span class="check">да</span>
-            </td>
-            <td class="rates-table__data">
-              Смайлики
-              <span class="check">да</span>
-            </td>
-          </tr>
-          <tr class="rates-table__rows">
-            <td class="rates-table__data">
-              Комментарии
-              <span class="cross">нет</span>
-            </td>
-            <td class="rates-table__data">
-              Комментарии
-              <span class="cross">нет</span>
-            </td>
-            <td class="rates-table__data">
-              Комментарии
-              <span class="check">да</span>
-            </td>
-          </tr>
-        </table>
-        
-        <div class="rates__toggle">
-          <label for="rate1"></label>
-          <label for="rate2"></label>
-          <label for="rate3"></label>
+        <div class="overflow">
+  <!--Невидимые радиопереключатели слайдера-->
+          <input type="radio" class="rates__radio-button" name="rates-toggle" id="rate1">
+          <input type="radio" class="rates__radio-button" name="rates-toggle" id="rate2" checked>
+          <input type="radio" class="rates__radio-button" name="rates-toggle" id="rate3">
+
+          <table class="rates-table">
+            <tr class="rates-table__rows">
+              <th class="rates-table__headings">
+                <p class="fat-title  fat-title--line-30  fat-title--white  fat-title--upcase">Начальный</p>
+                <p class="slim-title">0,00 USD</p>
+              </th>
+              <th class="rates-table__headings rates-table__headings--hit">
+                <p class="fat-title  fat-title--line-30  fat-title--white  fat-title--upcase">Стандарт</p>
+                <p class="slim-title">3,99 USD</p>
+              </th>
+              <th class="rates-table__headings">
+                <p class="fat-title  fat-title--line-30  fat-title--white  fat-title--upcase">Премиум</p>
+                <p class="slim-title">5,99 USD</p>
+              </th>
+            </tr>
+            <tr class="rates-table__rows">
+              <td class="rates-table__data">
+                Розовый фильтр
+                <span class="check">да</span>
+              </td>
+              <td class="rates-table__data">
+                Розовый фильтр
+                <span class="check">да</span>
+              </td>
+              <td class="rates-table__data">
+                Розовый фильтр
+                <span class="check">да</span>
+              </td>
+            </tr>
+            <tr class="rates-table__rows">
+              <td class="rates-table__data">
+                Смайлики
+                <span class="cross">нет</span>
+              </td>
+              <td class="rates-table__data">
+                Смайлики
+                <span class="check">да</span>
+              </td>
+              <td class="rates-table__data">
+                Смайлики
+                <span class="check">да</span>
+              </td>
+            </tr>
+            <tr class="rates-table__rows">
+              <td class="rates-table__data">
+                Комментарии
+                <span class="cross">нет</span>
+              </td>
+              <td class="rates-table__data">
+                Комментарии
+                <span class="cross">нет</span>
+              </td>
+              <td class="rates-table__data">
+                Комментарии
+                <span class="check">да</span>
+              </td>
+            </tr>
+          </table>
+
+          <div class="rates__toggle">
+            <label for="rate1"></label>
+            <label for="rate2"></label>
+            <label for="rate3"></label>
+          </div>
         </div>
       </div>
     </section>
@@ -304,28 +293,36 @@
     
 <!--~~~~Раздел контактов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="contacts">
-      <div class="contacts__inner">
-        <h1 class="contacts__main-title">
-          Остались вопросы? Свяжитесь с нами!
-        </h1>
-        <h2 class="contacts__second-title">
-          Звоните:
-        </h2>
-        <p class="contacts__caption">
-          +7&nbsp;(812)&nbsp;555-66-66
-        </p>
-        <h2 class="contacts__second-title">
-          Пишите:
-        </h2>
-        <p class="contacts__caption">
-          mail@htmlacademy.ru
-        </p>
-        <h2 class="contacts__second-title">
-          Приезжайте в гости:
-        </h2>
-        <p class="contacts__caption">
-          ул. Большая Конюшенная,&nbsp;19/8
-        </p>
+      <div class="wrap">
+        <div class="contacts__title">
+          <h2 class="slim-title  slim-title--gray">
+            Остались вопросы? Свяжитесь с нами!
+          </h2>
+        </div>
+        <div class="contacts__item">
+          <h3 class="fat-title">
+            Звоните:
+          </h3>
+          <p class="slim-title  slim-title--red">
+            +7&nbsp;(812)&nbsp;555-66-66
+          </p>
+        </div>
+        <div class="contacts__item">
+          <h3 class="fat-title">
+            Пишите:
+          </h3>
+          <p class="slim-title  slim-title--red">
+            mail@htmlacademy.ru
+          </p>
+        </div>
+        <div class="contacts__item">
+          <h3 class="fat-title">
+            Приезжайте в гости:
+          </h3>
+          <p class="slim-title  slim-title--red">
+            ул. Большая Конюшенная,&nbsp;19/8
+          </p>
+        </div>
         <div class="contacts__bottom-map"></div>
       </div>
     </section>

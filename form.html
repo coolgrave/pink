@@ -10,24 +10,10 @@
 
 <!--ШАПКА===============================================-->
     <header class="page-header">
-      <div class="page-header__inner">
-        
-<!--~~~~Шапка: Блок навигации~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--    Название сайта и кнопка показа моб. меню-->
-        <div class="page-header__logo-wrap">
-          <a class="page-header__logo-link" href="/">
-            Pink
-          </a>
-        </div>
-        
-        <a class="page-header__nav-open" href="#menu">
-          <span>
-            Меню
-          </span>
-        </a>
+      <div class="wrap">
 
 <!--    Главное меню-->
-        <nav class="main-nav  main-nav--hide">
+        <nav class="main-nav  main-nav--open">
           
           <a class="main-nav__icon-close" href="#menu">
             <span>
@@ -41,7 +27,7 @@
             </a>
           </div>
           
-          <ul class="main-nav__list">
+          <ul class="main-nav__list  main-nav__list--show">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">
                 Информация
@@ -74,10 +60,12 @@
 <!--ОСНОВНОЙ РАЗДЕЛ=====================================-->
 <!--~~~~Заголовок страницы с формой~~~~~~~~~~~~~~~~~~~~~-->
     <div class="form-head">
-      <div class="form-head__inner">
-        <h1 class="form-head__title">
-          Конкурс на самое безбашенное путешествие с Пинк
-        </h1>
+      <div class="wrap">
+        <div class="page-title">
+          <h1 class="slim-title">
+            Конкурс на самое безбашенное путешествие с Пинк
+          </h1>
+        </div>
       </div>
     </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -88,7 +76,7 @@
       
 <!--~~~~Вводный текст~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
       <fieldset class="form-intro">
-        <div class="form-intro__inner">
+        <div class="wrap">
           <p class="form-intro__caption">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           </p>
@@ -100,25 +88,25 @@
       
 <!--~~~~Имя, фамилия, отчество~~~~~~~~~~~~~~~~~~~~~~~~~~-->
       <fieldset class="form-fio">
-        <div class="form-fio__inner">
+        <div class="wrap">
           <ul class="form-fio__list">
             
             <li class="form-fio__list-item">
-              <label class="form-fio__label" for="name-id">
+              <label class="form-label  form-label--left" for="name-id">
                 Имя: *
               </label>
               <input class="form-fio__field" type="text" name="name-field" id="name-id" placeholder="Введите ваше имя" required>
             </li>
 
             <li class="form-fio__list-item">
-              <label class="form-fio__label" for="family-id">
+              <label class="form-label  form-label--left" for="family-id">
                 Фамилия: *
               </label>
               <input class="form-fio__field" type="text" name="family-field" id="family-id" placeholder="Укажите фамилию" required>
             </li>
 
             <li class="form-fio__list-item">
-              <label class="form-fio__label" for="patronym-id">
+              <label class="form-label  form-label--left" for="patronym-id">
                 Отчество:
               </label>
               <input class="form-fio__field" type="text" name="patronym-field" id="patronym-id" placeholder="Ну и отчество тоже">
@@ -133,9 +121,9 @@
       
 <!--~~~~Выбор приложения (группа радиокнопок)~~~~~~~~~~~-->
       <fieldset class="form-app">
-        <div class="form-app__inner">
+        <div class="wrap">
           
-          <h2 class="form-app__title">
+          <h2 class="form-label  form-label--center">
             С каким приложением путешествовали? *
           </h2>
           
@@ -171,9 +159,9 @@
       
 <!--~~~~Дата и продолжительность~~~~~~~~~~~~~~~~~~~~~~~~-->
       <fieldset class="form-period">
-        <div class="form-period__inner">
+        <div class="wrap">
           
-          <h2 class="form-period__title">
+          <h2 class="form-label  form-label--center">
             Когда вы путешествовали? *
           </h2>
           
@@ -181,7 +169,7 @@
             
             <li class="form-period__list-item">
               <input class="form-period__field" type="text" id="start-date-id" name="start-date-field" value="2015-04-01">
-              <label class="form-period__label" for="start-date-id">
+              <label class="form-label  form-label--center" for="start-date-id">
                 Дата выезда
               </label>
             </li>
@@ -194,14 +182,14 @@
                 <input class="control-values__field" type="text" id="duration-id" name="duration-field" value="10 дней">
                 <button class="control-values__btn-plus" type="button" id="control-values-plus">+</button>
               </div>
-              <label class="form-period__label" for="start-date-id">
+              <label class="form-label  form-label--center" for="start-date-id">
                 Продолжительность
               </label>
             </li>
             
             <li class="form-period__list-item">
               <input class="form-period__field" type="text" id="end-date-id" name="end-date-field" value="2015-04-01" disabled>
-              <label class="form-period__label" for="end-date-id">
+              <label class="form-label  form-label--center" for="end-date-id">
                 Дата возвращения
               </label>
             </li>
@@ -213,11 +201,11 @@
       
       
       
-<!--~~~~Попутчики~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~Количество попутчиков~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
       <fieldset class="form-fellows">
-        <div class="form-fellows__inner">
+        <div class="wrap">
           
-          <h2 class="form-fellows__title">
+          <h2 class="form-label  form-label--center">
             Количество попутчиков *
           </h2>
           
@@ -229,71 +217,75 @@
           
           <div class="form-fellows__hor-line"></div>
           
+  <!--+++++++++++++++++ Попутчик №1 ++++++++++++++++++++-->
           <div class="fellow-data">
             
-            <div class="fellow-data__label-row">
-              <label class="fellow-data__label-count" for="fellows-count-id-1">
+            <div class="fellow-data__row-1">
+              <label class="form-label  form-label--left" for="fellows-count-id-1">
                 №
               </label>        
-              <label class="fellow-data__label-name" for="fellow-name-id-1">
+              <label class="form-label  form-label--left" for="fellow-name-id-1">
                 Имя: *
               </label> 
             </div>
             
-            <div class="fellow-data__field-row">
-              <input class="fellow-data__field-count" type="text" id="fellows-count-id-1" value="1" disabled>
+            <div class="fellow-data__row-1">
+              <output class="fellow-data__field-count" id="fellows-count-id-1">1</output>
               <input class="fellow-data__field-name" type="text" id="fellow-name-id-1" name="fellow-name-field-1" placeholder="Введите ваше имя">
             </div>
             
-            <div class="fellow-data__row">
-              <label class="fellow-data__label-alias" for="fellow-alias-id-1">
+            <div class="fellow-data__row-2">
+              <label class="form-label  form-label--left" for="fellow-alias-id-1">
                 Прозвище:
               </label>
             </div>
             
-            <div class="fellow-data__field-row">
+            <div class="fellow-data__row-2">
               <input class="fellow-data__field-alias" type="text" id="fellow-alias-id-1" name="fellow-alias-field-1" placeholder="Ну как же без этого!">
             </div>
           </div>
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
           
+  <!--+++++++++++++++++ Попутчик №2 ++++++++++++++++++++-->
           <div class="fellow-data">
             
-            <div class="fellow-data__label-row">
-              <label class="fellow-data__label-count" for="fellow-count-id-2">
+            <div class="fellow-data__row-1">
+              <label class="form-label  form-label--left" for="fellow-count-id-2">
                 №
               </label>        
-              <label class="fellow-data__label-name" for="fellow-name-id-2">
+              <label class="form-label  form-label--left" for="fellow-name-id-2">
                 Имя: *
               </label> 
             </div>
             
-            <div class="fellow-data__field-row">
-              <input class="fellow-data__field-count" type="text" id="fellow-count-id-2" value="2" disabled>
+            <div class="fellow-data__row-1">
+              <output class="fellow-data__field-count" id="fellow-count-id-2">2</output>
               <input class="fellow-data__field-name" type="text" id="fellow-name-id-2" name="fellow-name-field-2" placeholder="Введите ваше имя">
             </div>
             
-            <div class="fellow-data__row">
-              <label class="fellow-data__label-alias" for="fellow-alias-id-2">
+            <div class="fellow-data__row-2">
+              <label class="form-label  form-label--left" for="fellow-alias-id-2">
                 Прозвище:
               </label>
             </div>
             
-            <div class="fellow-data__field-row">
+            <div class="fellow-data__row-2">
               <input class="fellow-data__field-alias" type="text" id="fellow-alias-id-2" name="fellow-alias-field-2" placeholder="Ну как же без этого!">
             </div>
           </div>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
           
         </div>
       </fieldset>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      
+        
       
       
 <!--~~~~Достижения (группа чекбоксов)~~~~~~~~~~~~~~~~~~~-->
       <fieldset class="form-achieves">
-        <div class="form-achieves__inner">
-          <h2 class="form-achieves__title">
-            Ваши безбашенные достижения в путешествии
+        <div class="wrap">
+          <h2 class="form-label  form-label--center">
+            Ваши безбашенные достижения&nbsp;в&nbsp;путешествии
           </h2>
           <ul class="form-achieves__list">
             <li class="form-achieves__list-item">
@@ -330,11 +322,11 @@
     
 <!--~~~~Загрузка фотографий~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <fieldset class="form-pics">
-      <div class="form-pics__inner">
-        <h2 class="form-pics__title">
+      <div class="wrap">
+        <h2 class="form-label  form-label--center">
           Ваши фотографии из поездки *
         </h2>
-        <button class="form-pics__btn" type="button">
+        <button class="form-btn" type="button">
           Загрузить фото
         </button>
         <div class="form-pics__gallery" id="pics-set"></div>
@@ -346,8 +338,8 @@
     
 <!--~~~~Отправка формы~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <fieldset class="form-submit">
-      <div class="form-submit__inner">
-        <input class="form-submit__btn" type="submit" value="Отправить форму">
+      <div class="wrap">
+        <input class="form-btn  form-btn--green" type="submit" value="Отправить форму">
         <p class="form-submit__caption">
           <span class="form-submit__asterisk">*</span>
           — Обязательные поля
@@ -362,7 +354,7 @@
     
 <!--ПОДВАЛ==============================================-->
     <footer class="main-footer">
-      <div class="main-footer__inner">
+      <div class="wrap">
         <div class="main-footer__logo-wrap">
           <a class="main-footer__logo-link" href="index.html">Pink</a>
         </div>
