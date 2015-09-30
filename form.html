@@ -2,54 +2,55 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Главная - Pink</title>
+    <title>Форма - Pink</title>
     <link rel="stylesheet" href="css/style.css"> 
   </head>
   
   <body>
 
 <!--ШАПКА===============================================-->
-    <header>
-      <div class="container">
-        
-<!--~~~~Шапка: Блок навигации~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <nav class="main-navigation">
+    <header class="page-header">
+      <div class="wrap">
+
+<!--    Главное меню-->
+        <nav class="main-nav  main-nav--open">
           
-<!--      Название сайта и кнопка показа моб. меню-->
-          <div class="top-menu clearfix">
-            <a class="top-logo" href="index.html">
-                Pink
-            </a>
-            <a class="top-menu-icon" href="#menu">
-              <span>Меню</span>
+          <a class="main-nav__icon-close" href="#menu">
+            <span>
+              Закрыть
+            </span>
+          </a>
+          
+          <div class="main-nav__logo-wrap">
+            <a class="main-nav__logo-link" href="/">
+              Pink
             </a>
           </div>
           
-<!--      Мобильное меню-->
-          <ul class="mobile-menu">
-            <li>
-              <a href="#information">
+          <ul class="main-nav__list  main-nav__list--show">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
                 Информация
               </a>
             </li>
-            <li>
-              <a href="#blog">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="blog.html">
                 Блог
               </a>
             </li>
-            <li>
-              <a href="#reviews">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
                 Отзывы
               </a>
             </li>
-            <li>
-              <a href="#contest">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">
                 Конкурс
               </a>
             </li>
           </ul>
-          
         </nav>
+          
       </div>
     </header>
 <!--====================================================-->
@@ -57,218 +58,294 @@
     
         
 <!--ОСНОВНОЙ РАЗДЕЛ=====================================-->
-<!--~~~~Шапка: Заголовок страницы~~~~~~~~~~~~~~~~~~~~~~~-->
-    <div class="page-title">
-      <div class="container">
-        <h1>
-          Конкурс на самое безбашенное путешествие с Пинк
-        </h1>
+<!--~~~~Заголовок страницы с формой~~~~~~~~~~~~~~~~~~~~~-->
+    <div class="form-head">
+      <div class="wrap">
+        <div class="page-title">
+          <h1 class="slim-title">
+            Конкурс на самое безбашенное путешествие с Пинк
+          </h1>
+        </div>
       </div>
     </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 
 <!--ФОРМА===============================================-->
-    <form class="contest-form">
+    <form class="form">
       
 <!--~~~~Вводный текст~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <fieldset class="intro">
-        <div class="container">
-          <p>
+      <fieldset class="form-intro">
+        <div class="wrap">
+          <p class="form-intro__caption">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           </p>
         </div>
       </fieldset>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
       
       
       
 <!--~~~~Имя, фамилия, отчество~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <fieldset class="fio">
-        <div class="container">
-          
-          <label for="name-id">
-            Имя: *
-            <input type="text" name="name-field" id="name-id" placeholder="Введите ваше имя" required>
-          </label>
+      <fieldset class="form-fio">
+        <div class="wrap">
+          <ul class="form-fio__list">
+            
+            <li class="form-fio__list-item">
+              <label class="form-label  form-label--left" for="name-id">
+                Имя: *
+              </label>
+              <input class="form-fio__field" type="text" name="name-field" id="name-id" placeholder="Введите ваше имя" required>
+            </li>
 
-          <label for="family-id">
-            Фамилия: *
-            <input type="text" name="family-field" id="family-id" placeholder="Укажите фамилию" required>
-          </label>
+            <li class="form-fio__list-item">
+              <label class="form-label  form-label--left" for="family-id">
+                Фамилия: *
+              </label>
+              <input class="form-fio__field" type="text" name="family-field" id="family-id" placeholder="Укажите фамилию" required>
+            </li>
 
-          <label for="patronym-id">
-            Отчество:
-            <input type="text" name="patronym-field" id="patronym-id" placeholder="Ну и отчество тоже">
-          </label>
-        </div>
-      </fieldset>
-        
-      
-      
-<!--~~~~Выбор приложения (группа радиокнопок)~~~~~~~~~~~-->
-      <fieldset class="app">
-        <div class="container">
-          <h3>
-            С каким приложением путешествовали? *
-          </h3>
-          <ul>
-            <li>
-              <input type="radio" id="app-1" name="app-selector" value="app-1" checked>
-              <label for="app-1">Pink для iOS</label>
+            <li class="form-fio__list-item">
+              <label class="form-label  form-label--left" for="patronym-id">
+                Отчество:
+              </label>
+              <input class="form-fio__field" type="text" name="patronym-field" id="patronym-id" placeholder="Ну и отчество тоже">
             </li>
-            <li>
-              <input type="radio" id="app-2" name="app-selector" value="app-2">
-              <label for="app-2">Pink на Android</label>
-            </li>
-            <li>
-              <input type="radio" id="app-3" name="app-selector" value="app-3">
-              <label for="app-3">Windows Phone</label>
-            </li>
+            
           </ul>
         </div>
       </fieldset>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      
+      
+      
+<!--~~~~Выбор приложения (группа радиокнопок)~~~~~~~~~~~-->
+      <fieldset class="form-app">
+        <div class="wrap">
+          
+          <h2 class="form-label  form-label--center">
+            С каким приложением путешествовали? *
+          </h2>
+          
+          <ul class="form-app__list">
+            
+            <li class="form-app__list-item">
+              <input class="form-app__radio-button" type="radio" id="app-1" name="app-selector" value="app-1" checked>
+              <label class="form-app__label" for="app-1">
+                Pink для iOS
+              </label>
+            </li>
+            
+            <li class="form-app__list-item">
+              <input class="form-app__radio-button" type="radio" id="app-2" name="app-selector" value="app-2">
+              <label class="form-app__label" for="app-2">
+                Pink на Android
+              </label>
+            </li>
+            
+            <li class="form-app__list-item">
+              <input class="form-app__radio-button" type="radio" id="app-3" name="app-selector" value="app-3">
+              <label class="form-app__label" for="app-3">
+                Windows Phone
+              </label>
+            </li>
+            
+          </ul>
+        </div>
+      </fieldset>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      
       
       
 <!--~~~~Дата и продолжительность~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <fieldset class="period">
-        <div class="container">
+      <fieldset class="form-period">
+        <div class="wrap">
           
-          <h3>
+          <h2 class="form-label  form-label--center">
             Когда вы путешествовали? *
-          </h3>
+          </h2>
           
-          <label for="start-date-id">
-            <input type="date" id="start-date-id" name="start-date-field" value="2015-04-01">
-            Дата выезда
-          </label>
-          
-          <div class="period-duration">
-            <div id="period-minus">-</div>
-            <input type="number" min="1" max="99" step="1" id="duration-id" name="duration-field" value="10">
-            <div id="period-plus">+</div>
-            Продолжительность
-          </div>
-          
-          <label for="end-date-id">
-            <input type="date" id="end-date-id" name="end-date-field" value="2015-04-01" disabled>
-            Дата возвращения
-          </label>
+          <ul class="form-period__list">
+            
+            <li class="form-period__list-item">
+              <input class="form-period__field" type="text" id="start-date-id" name="start-date-field" value="2015-04-01">
+              <label class="form-label  form-label--center" for="start-date-id">
+                Дата выезда
+              </label>
+            </li>
+            
+            <li class="form-period__list-item">
+              
+<!--          Блок поля выбора значений-->
+              <div class="control-values">
+                <button class="control-values__btn-minus" type="button" id="control-values-minus">-</button>
+                <input class="control-values__field" type="text" id="duration-id" name="duration-field" value="10 дней">
+                <button class="control-values__btn-plus" type="button" id="control-values-plus">+</button>
+              </div>
+              <label class="form-label  form-label--center" for="start-date-id">
+                Продолжительность
+              </label>
+            </li>
+            
+            <li class="form-period__list-item">
+              <input class="form-period__field" type="text" id="end-date-id" name="end-date-field" value="2015-04-01" disabled>
+              <label class="form-label  form-label--center" for="end-date-id">
+                Дата возвращения
+              </label>
+            </li>
+            
+          </ul>
         </div>
       </fieldset>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
       
       
       
-<!--~~~~Попутчики~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <fieldset class="fellows">
-        <div class="container">
+<!--~~~~Количество попутчиков~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <fieldset class="form-fellows">
+        <div class="wrap">
           
-          <div class="fellows-number">
+          <h2 class="form-label  form-label--center">
             Количество попутчиков *
-            <div id="fellows-minus">-</div>
-            <input type="number" min="1" max="99" step="1" id="fellows-num-id" name="duration-field" value="2" disabled>
-            <div id="fellows-plus">+</div>
+          </h2>
+          
+          <div class="control-values">
+            <button class="control-values__btn-minus" type="button" id="period-minus">-</button>
+            <input class="control-values__field" type="text" id="control-values-id" name="duration-field" value="2 чел">
+            <button class="control-values__btn-plus" type="button" id="period-plus">+</button>
           </div>
           
-          <fieldset class="fellow-1">
-            <label for="fellows-count-1">
-              №
-              <input type="button" id="fellows-count-1" value="1" disabled>
-            </label>
-
-            <label for="fellows-name-id-1">
-              Имя: *
-              <input type="text" id="fellows-name-id-1" name="fellows-name-field-1" placeholder="Введите ваше имя">
-            </label>
-
-            <label for="fellows-count-id-1">
-              Прозвище:
-              <input type="text" id="fellows-count-id-1" name="fellows-count-name-1" placeholder="Ну как же без этого!">
-            </label>
-          </fieldset>
+          <div class="form-fellows__hor-line"></div>
           
-          <fieldset class="fellow-2">
-            <label for="fellows-count-2">
-              №
-              <input type="button" id="fellows-count-2" value="2" disabled>
-            </label>
-
-            <label for="fellows-name-id-2">
-              Имя: *
-              <input type="text" id="fellows-name-id-2" name="fellows-name-field-2" placeholder="Введите ваше имя">
-            </label>
-
-            <label for="fellows-count-id-2">
-              Прозвище:
-              <input type="text" id="fellows-count-id-2" name="fellows-count-name-2" placeholder="Ну как же без этого!">
-            </label>
-          </fieldset>
+  <!--+++++++++++++++++ Попутчик №1 ++++++++++++++++++++-->
+          <div class="fellow-data">
+            
+            <div class="fellow-data__row-1">
+              <label class="form-label  form-label--left" for="fellows-count-id-1">
+                №
+              </label>        
+              <label class="form-label  form-label--left" for="fellow-name-id-1">
+                Имя: *
+              </label> 
+            </div>
+            
+            <div class="fellow-data__row-1">
+              <output class="fellow-data__field-count" id="fellows-count-id-1">1</output>
+              <input class="fellow-data__field-name" type="text" id="fellow-name-id-1" name="fellow-name-field-1" placeholder="Введите ваше имя">
+            </div>
+            
+            <div class="fellow-data__row-2">
+              <label class="form-label  form-label--left" for="fellow-alias-id-1">
+                Прозвище:
+              </label>
+            </div>
+            
+            <div class="fellow-data__row-2">
+              <input class="fellow-data__field-alias" type="text" id="fellow-alias-id-1" name="fellow-alias-field-1" placeholder="Ну как же без этого!">
+            </div>
+          </div>
+  <!--++++++++++++++++++++++++++++++++++++++++++++++++++-->
+          
+  <!--+++++++++++++++++ Попутчик №2 ++++++++++++++++++++-->
+          <div class="fellow-data">
+            
+            <div class="fellow-data__row-1">
+              <label class="form-label  form-label--left" for="fellow-count-id-2">
+                №
+              </label>        
+              <label class="form-label  form-label--left" for="fellow-name-id-2">
+                Имя: *
+              </label> 
+            </div>
+            
+            <div class="fellow-data__row-1">
+              <output class="fellow-data__field-count" id="fellow-count-id-2">2</output>
+              <input class="fellow-data__field-name" type="text" id="fellow-name-id-2" name="fellow-name-field-2" placeholder="Введите ваше имя">
+            </div>
+            
+            <div class="fellow-data__row-2">
+              <label class="form-label  form-label--left" for="fellow-alias-id-2">
+                Прозвище:
+              </label>
+            </div>
+            
+            <div class="fellow-data__row-2">
+              <input class="fellow-data__field-alias" type="text" id="fellow-alias-id-2" name="fellow-alias-field-2" placeholder="Ну как же без этого!">
+            </div>
+          </div>
+<!--++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+          
         </div>
       </fieldset>
-      
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        
       
       
 <!--~~~~Достижения (группа чекбоксов)~~~~~~~~~~~~~~~~~~~-->
-      <fieldset class="achieves">
-        <div class="container">
-          <h3>
-            Ваши безбашенные достижения в путешествии
-          </h3>
-          <ul>
-            <li>
-              <input type="checkbox" id="achieve-1" name="achieve-name-1" value="achieve-1" checked>
-              <label for="achieve-1">Сделал селфи с акулой</label>
+      <fieldset class="form-achieves">
+        <div class="wrap">
+          <h2 class="form-label  form-label--center">
+            Ваши безбашенные достижения&nbsp;в&nbsp;путешествии
+          </h2>
+          <ul class="form-achieves__list">
+            <li class="form-achieves__list-item">
+              <input class="form-achieves__checkbox" type="checkbox" id="achieve-1" name="achieve-name-1" value="achieve-1" checked>
+              <label class="form-achieves__label" for="achieve-1">Сделал селфи с акулой</label>
             </li>
-            <li>
-              <input type="checkbox" id="achieve-2" name="achieve-name-2" value="achieve-2" checked>
-              <label for="achieve-2">Обгорел на пляже</label>
+            <li class="form-achieves__list-item">
+              <input class="form-achieves__checkbox" type="checkbox" id="achieve-2" name="achieve-name-2" value="achieve-2" checked>
+              <label class="form-achieves__label" for="achieve-2">Обгорел на пляже</label>
             </li>
-            <li>
-              <input type="checkbox" id="achieve-3" name="achieve-name-3" value="achieve-3">
-              <label for="achieve-3">Видел Чака Норриса</label>
+            <li class="form-achieves__list-item">
+              <input class="form-achieves__checkbox" type="checkbox" id="achieve-3" name="achieve-name-3" value="achieve-3">
+              <label class="form-achieves__label" for="achieve-3">Видел Чака Норриса</label>
             </li>
-            <li>
-              <input type="checkbox" id="achieve-4" name="achieve-name-4" value="achieve-4">
-              <label for="achieve-4">Накупил сувениров</label>
+            <li class="form-achieves__list-item">
+              <input class="form-achieves__checkbox" type="checkbox" id="achieve-4" name="achieve-name-4" value="achieve-4">
+              <label class="form-achieves__label" for="achieve-4">Накупил сувениров</label>
             </li>
-            <li>
-              <input type="checkbox" id="achieve-5" name="achieve-name-5" value="achieve-5" checked>
-              <label for="achieve-5">Удержал башню</label>
+            <li class="form-achieves__list-item">
+              <input class="form-achieves__checkbox" type="checkbox" id="achieve-5" name="achieve-name-5" value="achieve-5" checked>
+              <label class="form-achieves__label" for="achieve-5">Удержал башню</label>
             </li>
-            <li>
-              <input type="checkbox" id="achieve-6" name="achieve-name-6" value="achieve-6">
-              <label for="achieve-6">Разгромил отель</label>
+            <li class="form-achieves__list-item">
+              <input class="form-achieves__checkbox" type="checkbox" id="achieve-6" name="achieve-name-6" value="achieve-6">
+              <label class="form-achieves__label" for="achieve-6">Разгромил отель</label>
             </li>
           </ul>
         </div>
       </fieldset>
     </form>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     
     
     
 <!--~~~~Загрузка фотографий~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <fieldset class="pics">
-      <div class="container">
-        <h3>
+    <fieldset class="form-pics">
+      <div class="wrap">
+        <h2 class="form-label  form-label--center">
           Ваши фотографии из поездки *
-        </h3>
-        <button class="pics-upload">Загрузить фото</button>
-        <div class="pics-upload-gallery" id="pics-set"></div>
+        </h2>
+        <button class="form-btn" type="button">
+          Загрузить фото
+        </button>
+        <div class="form-pics__gallery" id="pics-set"></div>
       </div>
     </fieldset>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
     
     
 <!--~~~~Отправка формы~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <fieldset class="submit">
-      <div class="container">
-        <input type="submit" value="Отправить форму">
-        <p class="required-fields">
-          <span class="asterisk">*</span>
+    <fieldset class="form-submit">
+      <div class="wrap">
+        <input class="form-btn  form-btn--green" type="submit" value="Отправить форму">
+        <p class="form-submit__caption">
+          <span class="form-submit__asterisk">*</span>
           — Обязательные поля
         </p>
       </div>
     </fieldset>
-    
 <!--====================================================-->
     
     
@@ -276,29 +353,30 @@
     
     
 <!--ПОДВАЛ==============================================-->
-    <footer>
-      <div class="container">
-        <div class="footer-logo">
-          <a class="footer-link" href="index.html">Pink</a>
+    <footer class="main-footer">
+      <div class="wrap">
+        <div class="main-footer__logo-wrap">
+          <a class="main-footer__logo-link" href="index.html">Pink</a>
         </div>
         
         <div class="social-links">
-          <a class="social-icon icon-tw" href="#">Twitter</a>
-          <a class="social-icon icon-fb" href="#">Facebook</a>
-          <a class="social-icon icon-gp" href="#">Google Play</a>
+          <a class="social-links__icon social-links__icon--tw" href="#">Twitter</a>
+          <a class="social-links__icon social-links__icon--fb" href="#">Facebook</a>
+          <a class="social-links__icon social-links__icon--gp" href="#">Google Play</a>
         </div>
         
         <div class="copyright">
           <a href="#">
             Разработано
-            <span class="icon-htmlacademy">HTML Academy</span>
+            <span class="copyright__icon-htmlacademy">
+              HTML Academy
+            </span>
           </a>
         </div>
         
       </div>
     </footer>
 <!--====================================================-->
-    
     
     <!-- <script src="js/script.js"></script> -->
 
