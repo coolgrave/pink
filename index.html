@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Главная - Pink</title>
-    <link rel="stylesheet" href="css/style.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic&subset=latin,cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   
   <body>
@@ -13,9 +14,10 @@
       <div class="wrap">
 
 <!--    Главное меню-->
-        <nav class="main-nav  main-nav--open">
+<!--    Для открытия меню добавить класс "main-nav--open"-->
+        <nav class="main-nav">
           
-          <a class="main-nav__icon-close" href="#menu">
+          <a class="main-nav__icon" href="#menu">
             <span>
               Закрыть
             </span>
@@ -60,6 +62,7 @@
 <!--ОСНОВНОЙ РАЗДЕЛ=====================================-->
 <!--~~~~Раздел закачки приложения~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="app">
+      <div clas="app__mask">
       <div class="wrap">
         
         <div class="page-title">
@@ -88,6 +91,7 @@
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
         
+      </div>
       </div>
     </section>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->

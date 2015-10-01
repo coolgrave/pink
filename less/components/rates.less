@@ -1,0 +1,109 @@
+/*~~~~~Раздел тарифов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.rates {
+  background: #f2f2f2;
+  margin-bottom: 30px;
+  
+  &__inner {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    outline: 10px solid black;
+    overflow: hidden;
+    padding-top: 50px;
+  }
+  
+  &__title {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  &__radio-button {
+    display: none;
+  }
+  
+  &__toggle {
+    display: inline-block;
+    height: 20px;
+    padding: 30px;
+  }
+}
+
+.rates-table {
+  position: relative;
+  left: -80%;
+  width: 260%;
+  text-transform: uppercase;
+  border-collapse: collapse;
+  z-index: 0;
+  
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  &__headings {
+    position: relative;
+    background: #283645;
+    color: #fff;
+    box-shadow: inset 2px 0px 0px 0px #e5e5e5;
+    overflow: hidden;
+  }
+  
+  &__headings--hit::after {
+    content: "Хит";
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    left: -28px;
+    top: 10px;
+    font-weight: normal;
+    background: #d22856;
+    transform: rotate(-45deg);
+    line-height: 30px;
+    z-index: 10;
+  }
+  
+  &__data {
+    padding: 20px;
+    text-align: left;
+    background: #fff;
+    box-shadow: inset 2px -2px 0px 0px #e5e5e5;
+  }
+}
+
+label[for="rate1"],
+label[for="rate2"],
+label[for="rate3"] {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 10px;
+  background: #bec2c7;
+  border: 3px solid #f2f2f2;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#rate1:checked ~ .rates__toggle label[for="rate1"],
+#rate2:checked ~ .rates__toggle label[for="rate2"],
+#rate3:checked ~ .rates__toggle label[for="rate3"] {
+  border: 3px solid #283645;
+  background: #fff;
+}
+
+#rate1:checked ~ .rates-table {
+  left: 7.5%;
+  transition: .7s;
+}
+
+#rate2:checked ~ .rates-table {
+  left: -80%;
+  transition: .7s;
+}
+
+#rate3:checked ~ .rates-table {
+  left: -167.5%;
+  transition: .7s;
+}

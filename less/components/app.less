@@ -1,0 +1,50 @@
+/*~~~~~Приложение~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.app {
+  margin-bottom: 30px;
+  background-color: @bg-app;
+  background-image: 
+    linear-gradient(@bg-app, @bg-app),
+    url(@url-app-img),
+    url(@url-app-bg);
+  background-repeat: no-repeat;
+  background-position: 
+    0 458px,
+    50% 0,
+    50% -66px;
+  background-size: 
+    auto,
+    auto 486px,
+    auto 550px;
+  
+  &__caption {
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+  }
+}
+
+.download-btn {
+  display: inline-block;
+  width: 250px;
+  margin: 20px;
+  margin-top: 320px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  background: blue;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.download-links {
+  &__icon {
+    display: inline-block;
+    margin: 25px 10px;
+    width: 70px;
+    height: 70px;
+    background: #c15b00;
+    line-height: 70px;
+    color: #fff;
+  }
+}

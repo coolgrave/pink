@@ -1,0 +1,149 @@
+/*~~~~~Шапка: Мобильное меню~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.main-nav {
+  position: absolute;
+  width: 320px;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+  }
+  
+  &__item {
+    background: #283645;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+  }
+  
+  &__link {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  &__logo-link {
+    display: block;
+    padding: 18px 10px;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-align: left;
+    
+  }
+  
+  &__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 46px;
+    padding: 10px;
+    font-size: 0;
+    
+    & span {
+      display: block;
+      position: relative;
+      top: 20px;
+      width: 100%;
+      height: 5px;
+      background-color: #fff;
+      
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background-color:  #fff;
+        top: -10px;
+      }
+      
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background-color:  #fff;
+        bottom: -10px;
+      }
+    }
+  }
+}
+
+.main-nav:hover .main-nav__list,
+.main-nav--open .main-nav__list {
+  display: block;
+}
+
+.main-nav:hover .main-nav__logo-wrap,
+.main-nav--open .main-nav__logo-wrap {
+  background: #283645;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+}
+
+.main-nav:hover .main-nav__logo-link,
+.main-nav--open .main-nav__logo-link {
+  display: block;
+  color: #fff;
+  padding: 22px 10px;
+  padding-top: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: left;
+  background: #283645;
+}
+
+.main-nav:hover .main-nav__icon,
+.main-nav--open .main-nav__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 54px;
+  padding: 10px;
+  font-size: 0;
+}
+
+.main-nav:hover .main-nav__icon span,
+.main-nav--open .main-nav__icon span {
+  display: block;
+  position: relative;
+  top: 21px;
+  width: 32px;
+  height: 4px;
+  transform: rotate(45deg);
+}
+
+.main-nav:hover .main-nav__icon span::after,
+.main-nav--open .main-nav__icon span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    background-color:  #fff;
+}
+
+.main-nav:hover .main-nav__icon span::before,
+.main-nav--open .main-nav__icon span::before {
+    display: none;
+}
+
+.main-nav:hover .main-nav__icon span::after,
+.main-nav--open .main-nav__icon span::after {
+    transform: rotate(90deg);
+}

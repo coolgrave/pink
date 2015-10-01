@@ -1,0 +1,66 @@
+/*~~~~~Раздел отзывов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.reviews {
+  background: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  
+  &__title {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  &__radio-button {
+    display: none;
+  }
+  
+  &__wrapper {
+    height: 225px;
+    margin-bottom: 20px;
+  }
+  
+  &__toggle {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-bottom: 10px;
+    
+    & label {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      margin: 10px;
+      background: #bec2c7;
+      border: 3px solid #fff;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}
+
+.reviews-item {
+  position: absolute;
+  padding: 20px;
+  overflow: hidden;
+  height: 185px;
+}
+
+.reviews-item--slide1,
+.reviews-item--slide2,
+.reviews-item--slide3 {
+  opacity: 0;
+  transition: .7;
+}
+
+#review1:checked~ .reviews__toggle label[for="review1"],
+#review2:checked~ .reviews__toggle label[for="review2"],
+#review3:checked~ .reviews__toggle label[for="review3"] {
+  border: 3px solid #283645;
+  background: #fff;
+}
+
+#review1:checked~ .reviews__wrapper .reviews-item--slide1,
+#review2:checked~ .reviews__wrapper .reviews-item--slide2,
+#review3:checked~ .reviews__wrapper .reviews-item--slide3 {
+  opacity: 1;
+  transition: all ease 1s 0s;
+}
