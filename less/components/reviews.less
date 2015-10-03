@@ -1,36 +1,26 @@
 /*~~~~~Раздел отзывов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .reviews {
-  background: #fff;
+  background: @bg-gray;
   text-align: center;
-  
-  &__title {
-    font-size: 0;
-    margin: 0;
-    padding: 0;
-  }
-  
   &__radio-button {
     display: none;
   }
-  
   &__wrapper {
-    height: 225px;
-    margin-bottom: 20px;
+    position: relative;
+    height: 267px;
   }
-  
   &__toggle {
-    display: inline-block;
-    vertical-align: baseline;
-    margin-bottom: 10px;
-    
+    padding-top: 26px;
+    padding-bottom: 34px;
+    background: @bg-white;
     & label {
       display: inline-block;
+      margin: 0 4px;
       width: 6px;
       height: 6px;
-      margin: 10px;
-      background: #bec2c7;
       border: 3px solid #fff;
       border-radius: 50%;
+      background: #bec2c7;
       cursor: pointer;
     }
   }
@@ -38,9 +28,16 @@
 
 .reviews-item {
   position: absolute;
-  padding: 20px;
   overflow: hidden;
-  height: 185px;
+  padding: 20px;
+  padding-top: 42px;
+  height: 205px;
+  background: @bg-white;
+  &__caption {
+    color: @text-dark;
+    font-size: 14px;
+    line-height: 30px;
+  }
 }
 
 .reviews-item--slide1,
@@ -61,5 +58,5 @@
 #review2:checked~ .reviews__wrapper .reviews-item--slide2,
 #review3:checked~ .reviews__wrapper .reviews-item--slide3 {
   opacity: 1;
-  transition: all ease 1s 0s;
+  transition: all ease 1s;
 }

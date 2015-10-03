@@ -2,119 +2,100 @@
 .main-nav {
   position: fixed;
   width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 20;
-  
   &__logo-wrap {
     background: rgba(0, 0, 0, .3);
   }
-  
   &__list {
+    display: none;
     margin: 0;
     padding: 0;
     list-style: none;
-    display: none;
   }
-  
   &__link {
     display: block;
     padding: 15px;
-    font-size: 18px;
-    line-height: 32px;
-    font-weight: bold;
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000;
+    background: @bg-nav;
     color: #fff;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    background: @bg-nav;
-    border-bottom: 1px solid #000;
-    border-top: 1px solid #485461;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
   }
-  
   &__logo-link {
     display: block;
     min-height: 66px;
-    font-size: 0;
-    background-image: url(@url-logo-top);
-    background-repeat: no-repeat;
+    background-image: url(@logo-top);
     background-position: 20px 0;
+    background-repeat: no-repeat;
+    font-size: 0;
   }
-  
   &__icon {
     position: absolute;
     top: 0;
     right: 0;
+    padding: 0 20px;
     width: 50px;
     height: 66px;
-    padding: 0 20px;
     font-size: 0;
-    
     & span {
-      display: block;
       position: relative;
-      top: 31px;
-      width: 100%;
+      top: 31px;
+      display: block;
       height: 4px;
       background-color: #fff;
-      
       &::before {
-        content: '';
-        display: block;
         position: absolute;
-        width: 100%;
-        height: 4px;
-        background-color:  #fff;
         top: -10px;
-      }
-      
-      &::after {
-        content: '';
-        display: block;
-        position: absolute;
         width: 100%;
         height: 4px;
-        background-color:  #fff;
+        background-color:  #fff;
+        content: '';
+      }
+      &::after {
+        position: absolute;
         bottom: -10px;
+        width: 100%;
+        height: 4px;
+        background-color:  #fff;
+        content: '';
       }
     }
   }
 }
 
-.main-nav:hover .main-nav__list,
 .main-nav--open .main-nav__list {
   display: block;
 }
 
-.main-nav:hover .main-nav__logo-wrap,
 .main-nav--open .main-nav__logo-wrap {
   min-height: 69px;
-  background: @bg-nav;
   border-bottom: 1px solid #000;
+  background: @bg-nav;
 }
 
-.main-nav:hover .main-nav__icon,
 .main-nav--open .main-nav__icon {
+  right: -3px;
   width: 30px;
 }
 
-.main-nav:hover .main-nav__icon span,
 .main-nav--open .main-nav__icon span {
   height: 3px;
   transform: rotate(45deg);
 }
 
-.main-nav:hover .main-nav__icon span::after,
 .main-nav--open .main-nav__icon span::after {
     top: 0;
     height: 3px;
 }
 
-.main-nav:hover .main-nav__icon span::before,
 .main-nav--open .main-nav__icon span::before {
     display: none;
 }
 
-.main-nav:hover .main-nav__icon span::after,
 .main-nav--open .main-nav__icon span::after {
     transform: rotate(90deg);
 }

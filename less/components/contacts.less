@@ -1,37 +1,26 @@
 /*~~~~~Раздел контактов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .contacts {
-  
   &__title {
-    padding-top: 10px;
-    
-    &--red {
-      color: #d22856;
+    padding: 20px;
+    padding-top: 41px;
+    padding-bottom: 0;
     }
-  }
-  
   &__item {
-    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 19px;
   }
-  
-  &__second-title {
-    margin: 0;
-    font-size: 18px;
-  }
-  
   &__bottom-map {
-    margin-top: 30px;
-    width: 100%;
+    margin-top: 20px;
     height: 200px;
-    background: #eee url("http://placehold.it/320x200") no-repeat;
-    
+    background: 
+      url("../img/map-marker.png") no-repeat right 50% bottom 69px,
+      #eee url(@map) no-repeat 50% 100%;
     &::after {
-      content: "";
       display: block;
-      width: 0;
-      margin: 10px auto;
-      border-top: 35px solid #fff;
-      border-left: 160px solid transparent;
+      border-top: 33px solid @bg-white;
       border-right: 160px solid transparent;
+      border-left: 160px solid transparent;
+      content: "";
     }
   }
 }

@@ -3,56 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>Блог - Pink</title>
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic&subset=latin,cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   
   <body>
 
 <!--ШАПКА===============================================-->
     <header class="page-header">
-      <div class="wrap">
+      <nav class="main-nav">
+        <a class="main-nav__icon" href="#menu">
+          <span>
+            Закрыть
+          </span>
+        </a>
 
-<!--    Главное меню-->
-        <nav class="main-nav  main-nav--open">
-          
-          <a class="main-nav__icon-close" href="#menu">
-            <span>
-              Закрыть
-            </span>
+        <div class="main-nav__logo-wrap">
+          <a class="main-nav__logo-link" href="index.html">
+            Pink
           </a>
-          
-          <div class="main-nav__logo-wrap">
-            <a class="main-nav__logo-link" href="/">
-              Pink
+        </div>
+
+        <ul class="main-nav__list  main-nav__list--show">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Информация
             </a>
-          </div>
-          
-          <ul class="main-nav__list  main-nav__list--show">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                Информация
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="blog.html">
-                Блог
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
-                Отзывы
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">
-                Конкурс
-              </a>
-            </li>
-          </ul>
-        </nav>
-          
-      </div>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="blog.html">
+              Блог
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Отзывы
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
+              Конкурс
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 <!--====================================================-->
     
@@ -184,7 +179,7 @@
     </footer>
 <!--====================================================-->
     
-    <!-- <script src="js/script.js"></script> -->
+     <script src="js/script.js"></script> 
 
   </body>
 </html>

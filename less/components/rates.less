@@ -1,88 +1,76 @@
 /*~~~~~Раздел тарифов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .rates {
   background: #f2f2f2;
-  
-  &__inner {
-    position: relative;
-    width: 320px;
-    margin: 0 auto;
-    outline: 10px solid black;
+  &__overflow {
     overflow: hidden;
-    padding-top: 50px;
+    padding-top: 13px;
   }
-  
-  &__title {
-    font-size: 0;
-    margin: 0;
-    padding: 0;
-  }
-  
   &__radio-button {
     display: none;
   }
-  
   &__toggle {
-    display: inline-block;
-    height: 20px;
-    padding: 30px;
+    padding-top: 35px;
+    padding-bottom: 43px;
+    text-align: center;
+    label {
+      display: inline-block;
+      margin: 0 4px;
+      width: 6px;
+      height: 6px;
+      border: 3px solid #f2f2f2;
+      border-radius: 50%;
+      background: #bec2c7;
+      cursor: pointer;
+    }
   }
 }
 
 .rates-table {
   position: relative;
-  left: -80%;
   width: 260%;
   text-transform: uppercase;
-  border-collapse: collapse;
-  z-index: 0;
-  
-  &__title {
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
   &__headings {
     position: relative;
-    background: #283645;
-    color: #fff;
-    box-shadow: inset 2px 0px 0px 0px #e5e5e5;
     overflow: hidden;
+    padding-top: 16px;
+    background: #283645;
+    box-shadow: inset 2px 0px 0px 0px #e5e5e5;
+    color: #fff;
   }
-  
   &__headings--hit::after {
-    content: "Хит";
     position: absolute;
-    width: 100px;
-    height: 30px;
-    left: -28px;
-    top: 10px;
-    font-weight: normal;
-    background: #d22856;
-    transform: rotate(-45deg);
+    top: 12px;
+    left: -36px;
+    width: 120px;
+    background: #d22856;
+    content: "Хит";
+    font-weight: 600;
+    font-size: 14px;
     line-height: 30px;
-    z-index: 10;
+    transform: rotate(-45deg);
   }
-  
+  &__name {
+    margin-bottom: 2px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  &__price {
+    margin-bottom: 19px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+  }
   &__data {
-    padding: 20px;
-    text-align: left;
+    padding: 23px;
+    padding-top: 15px;
+    padding-bottom: 16px;
     background: #fff;
     box-shadow: inset 2px -2px 0px 0px #e5e5e5;
+    font-size: 14px;
+    line-height: 30px;
   }
-}
-
-label[for="rate1"],
-label[for="rate2"],
-label[for="rate3"] {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin: 0 10px;
-  background: #bec2c7;
-  border: 3px solid #f2f2f2;
-  border-radius: 50%;
-  cursor: pointer;
 }
 
 #rate1:checked ~ .rates__toggle label[for="rate1"],
@@ -105,4 +93,57 @@ label[for="rate3"] {
 #rate3:checked ~ .rates-table {
   left: -167.5%;
   transition: .7s;
+}
+
+.check,
+.cross {
+  position: relative;
+  float: right;
+  font-size: 0;
+}
+.check {
+  top: 13px;
+  right: 35px;
+}
+.check::before {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 26px;
+  height: 3px;
+  background-color: #3fc746;
+  content: "";
+  transform: rotate(-45deg);
+}
+.check::after {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  width: 14px;
+  height: 3px;
+  background-color: #3fc746;
+  content: "";
+  transform: rotate(45deg);
+}
+.cross {
+  top: 13px;
+  right: 35px;
+}
+.cross::before {
+  position: absolute;
+  left: 8px;
+  width: 34px;
+  height: 3px;
+  background-color: #f25b26;
+  content: "";
+  transform: rotate(45deg);
+}
+.cross::after {
+  position: absolute;
+  left: 8px;
+  width: 34px;
+  height: 3px;
+  background-color: #f25b26;
+  content: "";
+  transform: rotate(-45deg);
 }
