@@ -1,0 +1,68 @@
+/*~~~~~Приложение~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.app {
+  padding-top: 66px;
+  background-color: @bg-dark - 8;
+  background-image: 
+    linear-gradient(@bg-dark, @bg-dark),
+    url(@img-app),
+    url(@bg-app);
+  background-position: 
+    0 458px,
+    50% 0,
+    50% -66px;
+  background-size: 
+    auto,
+    auto 486px,
+    auto 550px;
+  background-repeat: no-repeat;
+  &__title-wrap  {
+    padding: 20px;
+    padding-top: 19px;
+    padding-bottom: 286px;
+  }
+}
+
+.download {
+    padding-top: 28px;
+    text-align: center;
+  &__btn {
+    display: inline-block;
+    margin-bottom: 27px;
+    padding-top: 14px;
+    padding-bottom: 17px;
+    width: 274px;
+    border: 3px solid #fff;
+    border-radius: 49px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+  }
+  &__links {
+    font-size: 0;
+  }
+  &__icon {
+    display: inline-block;
+    margin: 0 6px;
+    width: 68px;
+    height: 74px;
+    &--apple {
+      background-image: url(@icon-apple);
+    }
+    &--android {
+      background-image: url(@icon-android);
+    }
+    &--microsoft {
+      background-image: url(@icon-microsoft);
+    }
+  }
+  &__caption {
+    margin: 0;
+    padding: 20px;
+    padding-top: 9px;
+    padding-bottom: 30px;
+    color: #fff;
+    font-weight: 300;
+  }
+}

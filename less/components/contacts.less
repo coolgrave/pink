@@ -1,0 +1,26 @@
+/*~~~~~Раздел контактов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.contacts {
+  &__title {
+    padding: 20px;
+    padding-top: 41px;
+    padding-bottom: 0;
+    }
+  &__item {
+    padding-top: 5px;
+    padding-bottom: 19px;
+  }
+  &__bottom-map {
+    margin-top: 20px;
+    height: 200px;
+    background: 
+      url("../img/map-marker.png") no-repeat right 50% bottom 69px,
+      #eee url(@map) no-repeat 50% 100%;
+    &::after {
+      display: block;
+      border-top: 33px solid @bg-white;
+      border-right: 160px solid transparent;
+      border-left: 160px solid transparent;
+      content: "";
+    }
+  }
+}
