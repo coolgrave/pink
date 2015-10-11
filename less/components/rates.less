@@ -1,9 +1,9 @@
 /*~~~~~Раздел тарифов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .rates {
-  background: #f2f2f2;
+  background: @bg-gray;
   &__overflow {
     overflow: hidden;
-    padding-top: 13px;
+    padding-top: 66px;
   }
   &__radio-button {
     display: none;
@@ -17,9 +17,9 @@
       margin: 0 4px;
       width: 6px;
       height: 6px;
-      border: 3px solid #f2f2f2;
+      border: 3px solid @bg-gray;
       border-radius: 50%;
-      background: #bec2c7;
+      background: @toggle-gray;
       cursor: pointer;
     }
   }
@@ -34,16 +34,18 @@
     position: relative;
     overflow: hidden;
     padding-top: 16px;
-    background: #283645;
-    box-shadow: inset 2px 0px 0px 0px #e5e5e5;
-    color: #fff;
+    padding-left: 3px;
+    padding-bottom: 11px;
+    background: @bg-dark;
+    box-shadow: inset 2px 0px 0px 0px @border-gray;
+    color: @text-white;
   }
   &__headings--hit::after {
     position: absolute;
     top: 12px;
     left: -36px;
     width: 120px;
-    background: #d22856;
+    background: @bg-hit;
     content: "Хит";
     font-weight: 600;
     font-size: 14px;
@@ -52,13 +54,13 @@
   }
   &__name {
     margin-bottom: 2px;
-    color: #fff;
+    color: @text-white;
     font-size: 18px;
     line-height: 30px;
   }
   &__price {
-    margin-bottom: 19px;
-    color: #fff;
+    margin-bottom: 20px;
+    color: @text-white;
     font-weight: 300;
     font-size: 24px;
     line-height: 30px;
@@ -67,18 +69,19 @@
     padding: 23px;
     padding-top: 15px;
     padding-bottom: 16px;
-    background: #fff;
-    box-shadow: inset 2px -2px 0px 0px #e5e5e5;
+    background: @text-white;
+    box-shadow: inset 2px -2px 0px 0px @border-gray;
     font-size: 14px;
     line-height: 30px;
+    text-align: left;
   }
 }
 
 #rate1:checked ~ .rates__toggle label[for="rate1"],
 #rate2:checked ~ .rates__toggle label[for="rate2"],
 #rate3:checked ~ .rates__toggle label[for="rate3"] {
-  border: 3px solid #283645;
-  background: #fff;
+  border: 3px solid @bg-dark;
+  background: @bg-white;
 }
 
 #rate1:checked ~ .rates-table {
@@ -104,47 +107,36 @@
 }
 .check {
   top: 13px;
-  right: 35px;
+  right: 27px;
 }
 .check::before {
   position: absolute;
-  top: 0;
-  left: 15px;
-  width: 26px;
-  height: 3px;
-  background-color: #3fc746;
+  top: -7px;
+  left: 3px;
+  width: 24px;
+  height: 9px;
+  border-bottom: 3px solid @green;
+  border-left: 3px solid @green;
   content: "";
   transform: rotate(-45deg);
 }
-.check::after {
-  position: absolute;
-  top: 5px;
-  left: 8px;
-  width: 14px;
-  height: 3px;
-  background-color: #3fc746;
-  content: "";
-  transform: rotate(45deg);
-}
 .cross {
   top: 13px;
-  right: 35px;
+  right: 27px;
 }
 .cross::before {
   position: absolute;
-  left: 8px;
   width: 34px;
   height: 3px;
-  background-color: #f25b26;
+  background-color: @red;
   content: "";
   transform: rotate(45deg);
 }
 .cross::after {
   position: absolute;
-  left: 8px;
   width: 34px;
   height: 3px;
-  background-color: #f25b26;
+  background-color: @red;
   content: "";
   transform: rotate(-45deg);
 }

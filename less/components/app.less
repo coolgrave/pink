@@ -1,39 +1,40 @@
 /*~~~~~Приложение~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
 .app {
   padding-top: 66px;
-  background-color: @bg-dark - 8;
+  background-color: @bg-dark;
   background-image: 
-    linear-gradient(@bg-dark, @bg-dark),
-    url(@img-app),
+    linear-gradient(@bg-download, @bg-download), 
+    url(@img-app), 
     url(@bg-app);
   background-position: 
-    0 458px,
-    50% 0,
+    0 458px, 
+    50% 0, 
     50% -66px;
   background-size: 
-    auto,
-    auto 486px,
+    auto, 
+    auto 486px, 
     auto 550px;
   background-repeat: no-repeat;
-  &__title-wrap  {
+  &__title-wrap {
     padding: 20px;
     padding-top: 19px;
-    padding-bottom: 286px;
+    padding-bottom: 305px;
   }
 }
 
 .download {
-    padding-top: 28px;
-    text-align: center;
+  padding-top: 28px;
+  text-align: center;
   &__btn {
     display: inline-block;
     margin-bottom: 27px;
     padding-top: 14px;
     padding-bottom: 17px;
     width: 274px;
-    border: 3px solid #fff;
+    border: 3px solid @bg-white;
     border-radius: 49px;
-    color: #fff;
+    color: @text-white;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -62,7 +63,8 @@
     padding: 20px;
     padding-top: 9px;
     padding-bottom: 30px;
-    color: #fff;
+    color: @text-white;
     font-weight: 300;
+    text-align: center;
   }
 }

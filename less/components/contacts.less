@@ -3,24 +3,36 @@
   &__title {
     padding: 20px;
     padding-top: 41px;
-    padding-bottom: 0;
-    }
+    padding-bottom: 23px;
+  }
   &__item {
-    padding-top: 5px;
-    padding-bottom: 19px;
+    padding-bottom: 13px;
+    & .fat-title {
+      margin-bottom: -1px;
+    }
   }
   &__bottom-map {
-    margin-top: 20px;
+    position: relative;
+    margin-top: 16px;
     height: 200px;
-    background: 
-      url("../img/map-marker.png") no-repeat right 50% bottom 69px,
-      #eee url(@map) no-repeat 50% 100%;
-    &::after {
+    background: @bg-map url(@map) no-repeat 50% 100%;
+    &::before {
       display: block;
       border-top: 33px solid @bg-white;
       border-right: 160px solid transparent;
-      border-left: 160px solid transparent;
+      border-left: 160px solid transparent;
       content: "";
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 142px;
+      bottom: 69px;
+      width: 16px;
+      height: 16px;
+      background: @map-marker;
+      border: 10px solid @bg-white;
+      border-radius: 50%;
     }
   }
 }

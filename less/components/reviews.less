@@ -11,18 +11,22 @@
     background-color: @bg-white;
   }
   &__toggle {
+    position: relative;
     padding-top: 26px;
-    padding-bottom: 34px;
+    padding-bottom: 62px;
     background: @bg-white;
     & label {
       display: inline-block;
       margin: 0 4px;
       width: 6px;
       height: 6px;
-      border: 3px solid #fff;
+      border: 3px solid @bg-white;
       border-radius: 50%;
-      background: #bec2c7;
+      background: @toggle-gray;
       cursor: pointer;
+    }
+    &::after {
+      .slope(12px);
     }
   }
 }
@@ -31,13 +35,12 @@
   position: absolute;
   overflow: hidden;
   padding: 20px;
-  padding-top: 42px;
-  height: 205px;
+  padding-top: 44px;
+  height: 203px;
   background: @bg-white;
   &__caption {
-    color: @text-dark;
-    font-size: 14px;
-    line-height: 30px;
+    .title(14px, 30px, 400, center);
+    padding-top: 4px;
   }
 }
 
@@ -51,8 +54,8 @@
 #review1:checked~ .reviews__toggle label[for="review1"],
 #review2:checked~ .reviews__toggle label[for="review2"],
 #review3:checked~ .reviews__toggle label[for="review3"] {
-  border: 3px solid #283645;
-  background: #fff;
+  border: 3px solid @bg-dark;
+  background: @bg-white;
 }
 
 #review1:checked~ .reviews__wrapper .reviews-item--slide1,

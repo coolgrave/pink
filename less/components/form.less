@@ -1,38 +1,41 @@
 /*==ФОРМА================================================*/
 .form {
-  text-align: left;
   & fieldset {
+    margin: 0;
     border: none;
   }
 }
 
+
 /*~~~~~Заголовок страницы с формой~~~~~~~~~~~~~~~~~~~~~~~*/
 .form-head {
   padding-top: 66px;
-  color: #fff;
-  background-color: @bg-dark - 8;
+  background-color: @bg-dark;
   background-image: url(@bg-app);
   background-position: 50% -66px;
   background-size: auto 550px;
   background-repeat: no-repeat;
-  &__title-wrap  {
+  color: #fff;
+  &__title-wrap {
     padding: 20px;
     padding-top: 30px;
-    padding-bottom: 25px;
+    padding-bottom: 44px;
   }
 }
+
 
 /*Красные заголовки и подписи в форме*/
 .form-label {
   display: block;
   margin: 0 20px;
-  padding: 10px;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: normal;
+  padding: 10px 5px;
+  color: @form-red;
   text-transform: uppercase;
-  color: firebrick;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
   &--left {
+    padding-left: 23px;
     text-align: left;
   }
   &--center {
@@ -41,402 +44,60 @@
 }
 
 
-
 /*~~~~~Вступление к форме~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .form-intro {
   padding: 0;
-  background: lightblue;
-  &__caption  {
+  &__caption {
+    margin: 0;
     padding: 20px;
-    margin: 0;
-    font-size: 15px;
-    line-height: 30px;
+    padding-top: 45px;
+    color: @text-dark;
     text-align: center;
-  }
-}
-
-
-
-/*~~~~~Фамилия, имя, отчество~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.form-fio {
-  padding: 0;
-  background: lightgreen;
-  &__inner {
-    width: 320px;
-    margin: 0 auto;
-    outline: 10px solid black;
-  }
-  &__list {
-    margin: 0;
-    padding: 0;
-    padding-top: 10px;
-  }
-  &__list-item {
-    list-style: none;
-  }
-  &__field {
-    width: 236px;
-    padding: 15px;
-    margin: 0 20px;
-    margin-bottom: 20px;
-    border: 2px solid #e5e5e5;
-    border-radius: 2px;
-  }
-}
-
-/*~~~~~Выбор приложения (группа радиокнопок)~~~~~~~~~~~~~*/
-.form-app {
-  padding: 0;
-  background: orange;
-  &__inner {
-    width: 320px;
-    margin: 0 auto;
-    outline: 10px solid black; 
-  }
-  &__list {
-    margin: 0;
-    padding: 0;
-  }
-  &__list-item {
-    list-style: none;
-  }
-  &__radio-button {
-    display: none;
-  }
-  &__label {
-    display: block;
-    padding: 10px;
-    &::before {
-      content: "";
-      background: yellow;
-      display: inline-block;
-      vertical-align: middle;
-      width: 32px;
-      height: 32px;
-      border: 2px solid black;
-      border-radius: 50%;
-      margin: 10px;
-      box-shadow: inset 0 0 0 9px yellow;
-    }
-  }
-}
-
-.form-app__radio-button:checked + .form-app__label::before {
-  background: black;
-}
-
-
-
-/*~~~~~Период~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.form-period {
-  padding: 0;
-  background: lightgreen;
-  &__inner {
-    width: 320px;
-    margin: 0 auto;
-    outline: 10px solid black;
-  }
-  &__list {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 20px;
-  }
-  &__list-item {
-    list-style: none;
-    padding-bottom: 10px;
-  }
-  &__field {
-    width: 251px;
-    padding: 13px;
-    margin: 0 20px;
-    border: 2px solid #e5e5e5;
-    border-radius: 2px;
-  }
-  
-}
-
-
-
-/*Блок выбора значений*/
-.control-values {
-  text-align: baseline;
-  font-size: 0;
-  text-align: center;
-  &__field {
-    display: inline-block;
-    padding: 15px;
-    margin: 0 -2px;
-    width: 152px;
-    border: 2px solid #e5e5e5;
-    border-radius: 2px;
-    vertical-align: bottom;
     font-size: 14px;
-    text-align: center;
-  }
-  &__btn-minus,
-  &__btn-plus {
-    position: relative;
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    width: 50px;
-    height: 50px;
-    background: #fff;
-    border: 2px solid #e5e5e5;
-    border-radius: 2px;
-    vertical-align: bottom;
-    font-size: 0;
-  }
-  &__btn-minus::before {
-    content: "";
-    position: absolute;
-    top: 22px;
-    left: 10px;
-    width: 27px;
-    height: 3px;
-    background: #000;
-  }
-  &__btn-plus::before {
-    content: "";
-    position: absolute;
-    top: 22px;
-    left: 10px;
-    width: 27px;
-    height: 3px;
-    background: #000;
-  }
-  &__btn-plus::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 22px;
-    width: 3px;
-    height: 27px;
-    background: #000;
+    line-height: 30px;
   }
 }
 
-
-
-/*~~~~~Количество попутчиков~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.form-fellows {
-  padding: 0;
-  background: orange;
-  &__inner {
-    width: 320px;
-    margin: 0 auto;
-    outline: 10px solid black;
-  }
-  &__hor-line {
-    border: 1px solid #e5e5e5;
-    margin: 10px 20px;
-    margin-top: 30px;
-  }
-  
-}
-
-.fellow-data {
-  padding: 0 20px;
-  padding-bottom: 30px;
-  &__row-1 {
-    font-size: 0;
-  }
-  &__row-2 {
-    padding-left: 54px;
-  }
-  & label {
-    display: inline-block;
-    min-width: 33px;
-    margin: 0;
-  }
-  &__field-count {
-    display: inline-block;
-    vertical-align: top;
-    width: 50px;
-    background: #fff;
-    border: 2px solid #e5e5e5;
-    border-radius: 2px;
-    font-size: 18px;
-    color: #283645;
-    line-height: 50px;
-    text-align: center;
-  }
-  &__field-name,
-  &__field-alias {
-    width: 194px;
-    height: 50px;
-    padding: 0 15px;
-    border: 2px solid #e5e5e5;
-    border-radius: 2px;
-  }
-  &__field-name {
-    margin: 0 -2px;
-  }
-}
-
-
-
-/*~~~~~Достижения (группа чекбоксов)~~~~~~~~~~~~~~~~~~~~~*/
-.form-achieves {
-  padding: 0;
-  background: lightgreen;
-  &__inner {
-    width: 320px;
-    margin: 0 auto;
-    outline: 10px solid black;
-  }
-  &__list {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 20px;
-  }
-  &__list-item {
-    list-style: none;
-  }
-  &__checkbox {
-    display: none;
-  }
-  &__label {
-    display: block;
-    padding: 10px;
-    &::before {
-      content: "";
-      background: lightgreen;
-      display: inline-block;
-      vertical-align: middle;
-      width: 32px;
-      height: 32px;
-      border: 2px solid black;
-      margin: 10px;
-      box-shadow: inset 0 0 0 9px lightgreen;
-    }
-  }
-  
-}
-
-.form-achieves__checkbox:checked+.form-achieves__label::before {
-  background: black;
-}
-
-
-
-/*~~~~~Загрузка фотографий~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.form-pics {
-  padding: 0;
-  background: orange;
-  &__inner {
-    width: 320px;
-    margin: 0 auto;
-    outline: 10px solid black;
-    padding-bottom: 20px;
-  }
-  &__gallery {
-    width: 280px;
-    min-height: 300px;
-    margin: 20px;
-    border: 2px solid #e5e5e5;
-    border-radius: 2px;
-  }
-}
 
 /*Большая кнопка формы*/
 .form-btn {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0;
+  margin: 0 20px;
+  margin-top: 23px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   width: 280px;
-  height: 50px;
-  background: #fff;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
-  vertical-align: bottom;
-  font-size: 20px;
+  background: @bg-white;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 18px;
+  line-height: 29px;
   &--green {
-    background: green;
-    color: #fff;
+    margin-top: 18px;
+    border-color: @btn-green;
+    background: @btn-green;
+    color: @text-white;
   }
 }
-
 
 
 /*~~~~~Отправка формы~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .form-submit {
-  padding: 0;
-  background: lightgreen;
-  &__inner {
-    width: 320px;
-    margin: 0 auto;
-    outline: 10px solid black;
-    padding: 20px 0;
-  }
+  padding-top: 30px;
   &__caption {
     display: block;
     margin: 0 20px;
+    margin-top: 31px;
     padding: 10px;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: normal;
-    text-transform: uppercase;
     color: #000;
-  }
-}
-
-/*==ФУТЕР================================================*/
-.main-footer {
-  background: #fff;
-  &__inner {
-    width: 320px;
-    margin: 0 auto;
-    outline: 10px solid black;
-  }
-  &__logo-wrap {
-    padding: 20px;
-    border: 2px solid orange;
-  }
-  &__logo-link {
-    display: inline-block;
-    padding: 8px 15px;
-    background: red;
-    color: #fff;
     text-transform: uppercase;
-    text-decoration: none;
-    font-size: 32px;
     font-weight: normal;
-    text-align: left;
-    &::before {
-      content: "logo";
-      display: inline-block;
-      vertical-align: top;
-      font-size: 12px;
-      border: 1px solid black;
-      padding: 5px 5px;
-      margin: 5px;
-      margin-left: 0;
-      margin-right: 25px;
-    }
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
   }
-}
-
-.social-links {
-  padding: 20px;
-  border: 2px solid orange;
-  &__icon {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 5px;
-    margin: 0 5px;
-    outline: 1px solid ;
-  }
-}
-
-.copyright {
-  padding: 20px;
-  border: 2px solid orange;
-  &__icon-htmlacademy {
-    padding: 10px;
-    margin: 0 10px;
-    outline: 1px solid ;
+  &__asterisk {
+    color: @text-red;
   }
 }
