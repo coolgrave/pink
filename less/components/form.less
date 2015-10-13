@@ -1,0 +1,103 @@
+/*==ФОРМА================================================*/
+.form {
+  & fieldset {
+    margin: 0;
+    border: none;
+  }
+}
+
+
+/*~~~~~Заголовок страницы с формой~~~~~~~~~~~~~~~~~~~~~~~*/
+.form-head {
+  padding-top: 66px;
+  background-color: @bg-dark;
+  background-image: url(@bg-app);
+  background-position: 50% -66px;
+  background-size: auto 550px;
+  background-repeat: no-repeat;
+  color: #fff;
+  &__title-wrap {
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 44px;
+  }
+}
+
+
+/*Красные заголовки и подписи в форме*/
+.form-label {
+  display: block;
+  margin: 0 20px;
+  padding: 10px 5px;
+  color: @form-red;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  &--left {
+    padding-left: 23px;
+    text-align: left;
+  }
+  &--center {
+    text-align: center;
+  }
+}
+
+
+/*~~~~~Вступление к форме~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.form-intro {
+  padding: 0;
+  &__caption {
+    margin: 0;
+    padding: 20px;
+    padding-top: 45px;
+    color: @text-dark;
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+
+/*Большая кнопка формы*/
+.form-btn {
+  margin: 0 20px;
+  margin-top: 23px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 280px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  background: @bg-white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 29px;
+  &--green {
+    margin-top: 18px;
+    border-color: @btn-green;
+    background: @btn-green;
+    color: @text-white;
+  }
+}
+
+
+/*~~~~~Отправка формы~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.form-submit {
+  padding-top: 30px;
+  &__caption {
+    display: block;
+    margin: 0 20px;
+    margin-top: 31px;
+    padding: 10px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
+  &__asterisk {
+    color: @text-red;
+  }
+}

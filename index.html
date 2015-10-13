@@ -8,41 +8,40 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   
-  <body>
+  <body class="page-index">
 
 <!--ШАПКА===============================================-->
     <header class="page-header">
       <nav class="main-nav">
-        <a class="main-nav__icon" href="#menu">
-          <span>
-            Закрыть
-          </span>
-        </a>
-
+        
         <div class="main-nav__logo-wrap">
           <a class="main-nav__logo-link" href="index.html">
             Pink
           </a>
         </div>
+        
+        <div class="main-nav__icon">
+          <span></span>
+        </div>
 
-        <ul class="main-nav__list  main-nav__list--show">
+        <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__menu-link" href="#">
               Информация
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="blog.html">
+            <a class="main-nav__menu-link" href="blog.html">
               Блог
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__menu-link" href="#">
               Отзывы
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">
+            <a class="main-nav__menu-link" href="form.html">
               Конкурс
             </a>
           </li>
@@ -59,7 +58,7 @@
       <div class="wrap">
         
         <div class="app__title-wrap">
-          <h1 class="slim-title">
+          <h1 class="slim-title  slim-title--white">
             Взгляните на жизнь иначе!
           </h1>
         </div>
@@ -98,23 +97,20 @@
         
 <!--    Заголовок раздела преимуществ-->
         <div class="features__title">
-          <h2 class="slim-title  slim-title--gray">
+          <h2 class="slim-title">
             Устали от серости мегаполиса?
           </h2>
-          <h2 class="slim-title  slim-title--gray">
+          <h2 class="slim-title">
             Нам есть, что вам предложить!
           </h2>
         </div>
-        
-<!--    Разделитель: косой фон-->
-        <div class="slope"></div>
       
 <!--    Преимущество 1-->
         <div class="features__item">
           <h3 class="fat-title  fat-title--black">
             Поднимает настроение
           </h3>
-          <p class="features__item-caption">
+          <p class="features__caption">
             Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!
           </p>
         </div>
@@ -124,7 +120,7 @@
           <h3 class="fat-title  fat-title--black">
             Меняет мир вокруг
           </h3>
-          <p class="features__item-caption">
+          <p class="features__caption">
             Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
           </p>
         </div>
@@ -134,7 +130,7 @@
           <h3 class="fat-title  fat-title--black">
             Заводит новых друзей
           </h3>
-          <p class="features__item-caption">
+          <p class="features__caption">
             Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
           </p>
         </div>
@@ -150,7 +146,7 @@
 <!--~~~~Раздел отзывов~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
     <section class="reviews">
       <div class="wrap">
-        <h2 class="null-title">
+        <h2 class="null-text">
           Отзывы
         </h2>
         
@@ -162,7 +158,7 @@
         <div class="reviews__wrapper">
 <!--    Отзыв 1-->
           <article class="reviews-item  reviews-item--slide1">
-            <h3 class="fat-title  fat-title--black  fat-title--line-30">
+            <h3 class="fat-title  fat-title--black">
               Николай Петров
             </h3>
             <p class="reviews-item__caption">
@@ -172,7 +168,7 @@
 
   <!--    Отзыв 2-->
           <article class="reviews-item  reviews-item--slide2">
-            <h3 class="fat-title  fat-title--black  fat-title--line-30">
+            <h3 class="fat-title  fat-title--black">
               Николай Иванов
             </h3>
             <p class="reviews-item__caption">
@@ -182,7 +178,7 @@
 
   <!--    Отзыв 3-->
           <article class="reviews-item  reviews-item--slide3">
-            <h3 class="fat-title  fat-title--black  fat-title--line-30">
+            <h3 class="fat-title  fat-title--black">
               Николай Сидоров
             </h3>
             <p class="reviews-item__caption">
@@ -209,8 +205,7 @@
     <section class="rates">
       <div class="wrap">
         <!--    Разделитель: косой фон-->
-        <div class="slope"></div>
-        <h2 class="null-title">
+        <h2 class="null-text">
           Цены
         </h2>
         <div class="rates__overflow">
@@ -223,15 +218,15 @@
             <tr class="rates-table__rows">
               <th class="rates-table__headings">
                 <p class="rates-table__name">Начальный</p>
-                <p class="rates-table__price">0,00 USD</p>
+                <p class="slim-title  slim-title--white">0,00 USD</p>
               </th>
               <th class="rates-table__headings rates-table__headings--hit">
                 <p class="rates-table__name">Стандарт</p>
-                <p class="rates-table__price">3,99 USD</p>
+                <p class="slim-title  slim-title--white">3,99 USD</p>
               </th>
               <th class="rates-table__headings">
                 <p class="rates-table__name">Премиум</p>
-                <p class="rates-table__price">5,99 USD</p>
+                <p class="slim-title  slim-title--white">5,99 USD</p>
               </th>
             </tr>
             <tr class="rates-table__rows">
@@ -294,7 +289,7 @@
     <section class="contacts">
       <div class="wrap">
         <div class="contacts__title">
-          <h2 class="slim-title  slim-title--gray">
+          <h2 class="slim-title">
             Остались вопросы? Свяжитесь с нами!
           </h2>
         </div>

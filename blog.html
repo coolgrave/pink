@@ -8,41 +8,40 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   
-  <body>
+  <body class="page-blog">
 
 <!--ШАПКА===============================================-->
     <header class="page-header">
       <nav class="main-nav">
-        <a class="main-nav__icon" href="#menu">
-          <span>
-            Закрыть
-          </span>
-        </a>
-
+        
         <div class="main-nav__logo-wrap">
           <a class="main-nav__logo-link" href="index.html">
             Pink
           </a>
         </div>
+        
+        <div class="main-nav__icon">
+          <span></span>
+        </div>
 
-        <ul class="main-nav__list  main-nav__list--show">
+        <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__menu-link" href="#">
               Информация
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="blog.html">
+            <a class="main-nav__menu-link" href="blog.html">
               Блог
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">
+            <a class="main-nav__menu-link" href="#">
               Отзывы
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">
+            <a class="main-nav__menu-link" href="form.html">
               Конкурс
             </a>
           </li>
@@ -59,8 +58,8 @@
 <!--~~~~Заголовок страницы блога~~~~~~~~~~~~~~~~~~~~~~~~-->
     <div class="blog-head">
       <div class="wrap">
-        <div class="page-title">
-          <h1 class="slim-title">
+        <div class="blog-head__title-wrap">
+          <h1 class="slim-title  slim-title--white">
             Блог путешественников, пользователей Пинк
           </h1>
         </div>
@@ -74,7 +73,7 @@
     <article class="blog-preview">
       <div class="wrap">
         <a class="blog-preview__inner" href="post.html">
-          <h3 class="fat-title  fat-title--line-27  fat-title--left">
+          <h3 class="fat-title">
             Антон и Надя в Тайланде
           </h3>
           <p class="blog-preview__date">
@@ -90,7 +89,7 @@
     <article class="blog-preview">
       <div class="wrap">
         <a class="blog-preview__inner" href="#">
-          <h3 class="fat-title  fat-title--line-27  fat-title--left">
+          <h3 class="fat-title">
             Гастрольный тур «Кубанских борщеваров»
           </h3>
           <p class="blog-preview__date">
@@ -106,7 +105,7 @@
     <article class="blog-preview">
       <div class="wrap">
         <a class="blog-preview__inner" href="#">
-          <h3 class="fat-title  fat-title--line-27  fat-title--left">
+          <h3 class="fat-title">
             Чета Болонских в Париже
           </h3>
           <p class="blog-preview__date">
@@ -122,7 +121,7 @@
     <article class="blog-preview">
       <div class="wrap">
         <a class="blog-preview__inner" href="#">
-          <h3 class="fat-title  fat-title--line-27  fat-title--left">
+          <h3 class="fat-title">
             Путешествие на яхте сеньора Христофора
           </h3>
           <p class="blog-preview__date">
@@ -161,13 +160,13 @@
         </div>
         
         <div class="social-links">
-          <a class="social-links__icon social-links__icon--tw" href="#">Twitter</a>
-          <a class="social-links__icon social-links__icon--fb" href="#">Facebook</a>
-          <a class="social-links__icon social-links__icon--gp" href="#">Google Play</a>
+          <a class="social-links__icon  social-links__icon--tw" href="https://twitter.com" rel="nofollow" и target="_blank">Twitter</a>
+          <a class="social-links__icon  social-links__icon--fb" href="https://www.facebook.com" rel="nofollow" и target="_blank">Facebook</a>
+          <a class="social-links__icon  social-links__icon--gp" href="https://play.google.com" rel="nofollow" и target="_blank">Google Play</a>
         </div>
         
         <div class="copyright">
-          <a href="#">
+          <a class="copyright__link" href="https://htmlacademy.ru">
             Разработано
             <span class="copyright__icon-htmlacademy">
               HTML Academy

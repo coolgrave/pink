@@ -2,28 +2,15 @@
 .main-nav {
   position: fixed;
   width: 100%;
+  z-index: 100;
   &__logo-wrap {
     background: rgba(0, 0, 0, .3);
   }
   &__list {
-    display: none;
+    display: none;
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-  &__link {
-    display: block;
-    padding: 15px;
-    border-top: 1px solid #485461;
-    border-bottom: 1px solid #000;
-    background: @bg-nav;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 32px;
   }
   &__logo-link {
     display: block;
@@ -33,6 +20,20 @@
     background-repeat: no-repeat;
     font-size: 0;
   }
+  &__menu-link {
+    display: block;
+    padding: 15px;
+    border-top: 1px solid @nav-border-top;
+    border-bottom: 1px solid @nav-border-bottom;
+    background: @bg-dark;
+    color: @text-white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+  }
   &__icon {
     position: absolute;
     top: 0;
@@ -40,19 +41,19 @@
     padding: 0 20px;
     width: 50px;
     height: 66px;
-    font-size: 0;
+    cursor: pointer;
     & span {
       position: relative;
-      top: 31px;
+      top: 31px;
       display: block;
       height: 4px;
-      background-color: #fff;
+      background-color: @bg-white;
       &::before {
         position: absolute;
         top: -10px;
         width: 100%;
         height: 4px;
-        background-color:  #fff;
+        background-color:  @bg-white;
         content: '';
       }
       &::after {
@@ -60,7 +61,7 @@
         bottom: -10px;
         width: 100%;
         height: 4px;
-        background-color:  #fff;
+        background-color:  @bg-white;
         content: '';
       }
     }
@@ -73,12 +74,12 @@
 
 .main-nav--open .main-nav__logo-wrap {
   min-height: 69px;
-  border-bottom: 1px solid #000;
-  background: @bg-nav;
+  border-bottom: 1px solid @nav-border-bottom;
+  background: @bg-dark;
 }
 
 .main-nav--open .main-nav__icon {
-  right: -3px;
+  right: -3px;
   width: 30px;
 }
 

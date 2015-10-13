@@ -1,21 +1,31 @@
 /*~~~~~Раздел преимуществ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .features {
-  background: #f2f2f2;
+  background: @bg-gray;
   &__title {
+    position: relative;
     padding: 20px;
     padding-top: 40px;
-    padding-bottom: 3px;
-    background: #fff;
+    padding-bottom: 35px;
+    margin-bottom: 48px;
+    background: @bg-white;
+    & h2 {
+      margin-bottom: 29px;
+    }
+    &::after {
+      .slope(16px);
+    }
+  }
+  &__caption {
+    .title(14px, 24px, 400, center);
   }
   &__item {
     padding: 20px;
     padding-top: 0;
-    padding-bottom: 20px;
   }
   &__image {
-    margin-top: 9px;
+    margin-top: 10px;
     height: 278px;
-    background-color: #f2f2f2;
+    background-color: @bg-gray;
     background-image: url(@img-features);
     background-position: 50% 0;
     background-repeat: no-repeat;

@@ -1,0 +1,49 @@
+/*~~~~~Достижения (группа чекбоксов)~~~~~~~~~~~~~~~~~~~~~*/
+
+.form-achieves {
+  padding: 0;
+  padding-top: 35px;
+  &__list {
+    margin: 0;
+    padding: 0 20px;
+    padding-bottom: 32px;
+    ;
+  }
+  &__list-item {
+    padding-top: 34px;
+    padding-bottom: 19px;
+    list-style: none;
+  }
+  &__checkbox {
+    display: none;
+  }
+  &__label {
+    position: relative;
+    display: block;
+    padding-left: 60px;
+    font-size: 18px;
+    line-height: 29px;
+    &::before {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 35px;
+      height: 35px;
+      border: 2px solid @border-gray;
+      border-radius: 2px;
+      content: "";
+    }
+  }
+}
+
+.form-achieves__checkbox:checked+.form-achieves__label::after {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 7px;
+  height: 20px;
+  border-right: 3px solid #d22856;
+  border-bottom: 3px solid #d22856;
+  content: "";
+  transform: rotate(45deg);
+}

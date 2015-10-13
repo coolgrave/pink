@@ -1,0 +1,91 @@
+/*~~~~~Период~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.form-period {
+  padding: 0;
+  padding-top: 38px;
+  &__list {
+    margin: 0;
+    padding: 0 20px;
+    padding-top: 31px;
+    padding-bottom: 25px;
+  }
+  &__list-item {
+    padding-bottom: 13px;
+    list-style: none;
+  }
+  &__field {
+    margin-bottom: 4px;
+    padding: 15px 20px;
+    width: 236px;
+    border: 2px solid @border-gray;
+    border-radius: 2px;
+    font-size: 18px;
+    line-height: 29px;
+    color: @text-dark;
+    &:disabled {
+      background: @bg-gray;
+    }
+  }
+}
+
+
+/*Блок выбора значений*/
+
+.control-values {
+  margin-bottom: 4px;
+  font-size: 0;
+  &__field {
+    display: inline-block;
+    margin: 0 -2px;
+    padding: 15px 20px;
+    padding-left: 24px;
+    width: 112px;
+    border: 2px solid @border-gray;
+    border-radius: 2px;
+    vertical-align: bottom;
+    text-align: center;
+    font-size: 18px;
+    line-height: 29px;
+    color: @text-dark;
+    &:disabled {
+      background: @bg-gray;
+    }
+  }
+  &__btn-minus,
+  &__btn-plus {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 63px;
+    border: 2px solid @border-gray;
+    border-radius: 2px;
+    background: @bg-white;
+    vertical-align: bottom;
+    font-size: 0;
+    &::before {
+      position: absolute;
+      top: 28px;
+      left: 16px;
+      width: 27px;
+      height: 3px;
+      background: @bg-black;
+      content: "";
+    }
+  }
+  &__btn-minus {
+    width: 61px;
+  }
+  &__btn-plus {
+    width: 63px;
+    &::after {
+      position: absolute;
+      top: 16px;
+      left: 28px;
+      width: 3px;
+      height: 27px;
+      background: @bg-black;
+      content: "";
+    }
+  }
+}
